@@ -192,3 +192,25 @@ p {
 #### Module 1: Getting started with CSS   1.4 Project - your first CSS   Comments
 
 # Comments
+
+As you write your CSS, you might end up with a pretty large document that can be hard to manage, or you might find yourself working on a team and having to read CSS someone else has written. In these cases, it helps to leave "notes" for the humans that read the file. 
+
+There is a way to leave notes that the Web browser will ignore when it is reading your CSS code, they're called **"comments"**. In fact, leaving comments in your code is considered a best practice by developers and is a habit we highly recommend you develop now. 
+
+To add comments to your CSS file, you need to surround any text you want the computer to ignore with a set of slashes and asterisks like so:
+
+```css
+/* those two symbols start my comment block
+ I can have more comment text here
+and the following two symbols end my comment */
+```
+
+As you can see, you can put as much text between the open and close symbols as you need, you can even have multiple lines. If you are working in an editor like Visual Studio code, you will notice that when you turn text into a comment, it turns green to indicate that the computer ignores that code.
+
+Generally, it is a good idea to put a comment at the top of each CSS rule, or at the very least at the top of sets of rules that apply to a single category or section of your Web page. 
+
+---
+
+#### Module 1: Getting started with CSS   1.4 Project - your first CSS   Module 1 project - Hello your world
+
+# Module 1 project - Hello your world
