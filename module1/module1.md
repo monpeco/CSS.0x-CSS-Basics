@@ -109,3 +109,86 @@ From the history of CSS, we learned why CSS came about, but the short answer is 
 #### Module 1: Getting started with CSS   1.3 Why CSS is important   Meet CSS Zen Garden
 
 # Meet CSS Zen Garden
+
+These videos will introduce you to a web project titled "CSS Zen Garden". You can explore the project here: http://www.csszengarden.com/
+
+Here is a bit about the project in their own words:
+
+> "CSS Zen Garden is a demonstration of what can be accomplished through CSS-based design. Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, broken CSS support, and abandoned browsers. We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WASP, and the major browser creators. There is a continuing need to show the power of CSS. The Zen Garden aims to excite, inspire, and encourage participation".
+> - Dave Shea, Creator of CSS Zen Garden
+
+
+Video: Meet CSS Zen Garden
+
+!> Missing video/transcrip
+
+Live coding video: CSS Zen Garden Demo
+
+!> Missing video/transcrip
+
+#### View source and browser tools
+
+In the above demo, you saw me using what is called the "developer tool" within my Edge Web browser to inspect and real-time change the style of a page's CSS. You can actually right click on any site and choose to look at the code that creates it. This feature exists in both Chrome and Firefox. Here is what I see when I right click on a Web page in my browser.
+
+As you can see, in this right click menu, there are two options: "Inspect element" and "View source". When you select view source, you can see the HTML and CSS powering that Web page. Here is what it looks like when I view the source of W3C's Web site:
+
+You can see a window that popped up from the bottom with all the HTML code for that site. Other Web browsers might pop this up in a separate window. 
+
+You can also get more specific and look at individual HTML elements with the "Inspect element" option. Here is what it looks like in Edge when I inspect a specific title:
+
+As you can see, not only is the element highlighted on the page, but this also highlights the HTML code and shows you the CSS for that element on the right-hand side. In the video above, you can see me use this view to change the CSS and HTML real-time, which can be a very convenient way to play around with your designs.
+
+As you work in your own sites you might want to use both of these features of your browser to understand what is happening in your own code, or in Web pages you find on the internet.
+
+---
+
+#### Module 1: Getting started with CSS   1.3 Why CSS is important   Activity 1.3 and discussion
+
+# Activity 1.3 and discussion
+
+#### Activity 1.3 - CSS Zen Garden critique
+
+Now that you’ve gotten a good idea of what CSS Zen Garden is, take a closer look. Go to http://www.mezzoblue.com/zengarden/alldesigns/ and look through the different CSS Zen Garden designs for inspiration. Which is your favorite design? Pick one design and share your critiques with the discussion. 
+
+For your chosen design, please answer the following questions:
+
+* What made this design stand out to you?
+* What do you like best about this design?
+* What is one thing you don't like about this design?
+ 
+
+---
+
+#### Module 1: Getting started with CSS   1.4 Project - your first CSS   "Hello beautiful world"
+
+# "Hello beautiful world"
+
+#### Video: "Hello beautiful world" Intro
+!> Missing video/transcrip
+
+#### Live coding video: "Hello beautiful world" Demo
+!> Missing video/transcrip
+
+https://codepen.io/techie4good/pen/oxQaVN
+
+```html
+<body>
+    <p>
+        Hello Beautiful World
+    </p>
+</body>
+```
+
+
+```css
+p {
+    color: blue;
+    font-family:Helvetica;
+}
+```
+
+---
+
+#### Module 1: Getting started with CSS   1.4 Project - your first CSS   Comments
+
+# Comments
