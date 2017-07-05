@@ -214,3 +214,61 @@ Generally, it is a good idea to put a comment at the top of each CSS rule, or at
 #### Module 1: Getting started with CSS   1.4 Project - your first CSS   Module 1 project - Hello your world
 
 # Module 1 project - Hello your world
+
+It's finally time to write your own CSS! Open your code editor of choice and save the following code as a new HTML document.
+
+Remember: to do this, you will need to give it a .html file extension when you are saving it. For example, you could call it index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+   </head>
+   <body>
+      <p>
+         Hello Beautiful World
+      </p>
+   </body>
+</html>
+```
+Now it’s time to add some CSS. Here is the CSS we wrote in the "Hello Beautiful World" demo. Make a new file with this css and save it with a .css file extension. For example, you can call it styles.css
+
+```css
+p {
+    color: blue;
+}
+```
+This won’t change the look of your HTML until you link the two files with this HTML tag.
+
+To do this:
+
+* remember it should be placed in the header, that is between the `<head>` and `</head>` tags in the HTML file. 
+* place the HTML and CSS files in the same folder on your computer
+* add the linking code to the HTML header (that means after the `<head>` tag and before the `</head>` tag). If your css is called "styles.css", here is what it would look like:
+
+```css
+<link rel="stylesheet" href="styles.css">
+```
+HINT: Is your favorite color not working? Not all color names are recognized by CSS. Sometimes the best way is to use HEX. We'll talk in more detail about colors in 
+the next module, but here is a list of colors you can use: [Extended color keywords](https://www.w3.org/TR/css-color/#svg-color)
+
+---
+
+#### Module 1: Getting started with CSS   1.5 Conclusion and exercises   Module learnings
+
+# Module learnings
+
+#### After this module, you should feel comfortable…
+
+* Explaining what CSS is, and why is it important
+* Opening HTML and CSS files in your chosen code editor
+* Using browser tools to inspect the source of a Web page you wrote
+
+#### In next module, you will:
+
+* Review the basics of HTML
+* Learn the anatomy of a CSS "rule"
+* Discover the concept of a property
+* Get to know selectors and how you can directly attach them to HTML tags
+* Finally, for your module project, you'll get a get a chance to build the CSS for an HTML page from scratch
