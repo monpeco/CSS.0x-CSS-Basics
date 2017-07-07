@@ -1,0 +1,17 @@
+/* styling sample02.html */
+
+
+/* basic set up of the sections */
+section{
+    color:brown;
+}
+
+/* the upper part of the page, here is going to be the important content */
+#up-section{
+    font-size:18px;
+}
+
+/* the botton part of the page */
+#botton-section{
+    font-size:10px;
+}
