@@ -342,7 +342,7 @@ It's amazing what a different just some colors and fonts can make!
 ```
 And the attached CSS file (style.css):
 
-```javascript
+```css
 body {
     background-color: #83AF9B;
     text-align: center;
@@ -376,3 +376,38 @@ p {
 #### Module 2: Building CSS rules   2.3 Building a CSS rule   Constructing your CSS rules
 
 # Constructing your CSS rules
+
+Here is an example CSS "rule":
+
+```css
+p {
+    color: blue;
+}
+```
+This rule tells the browser to make all text within a paragraph tag blue. A CSS rule is broken into two parts: the selector and the property
+
+![CSS rule](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/39ef39b8e6685b816badb923520fa827/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-3-1_css_anatomy.PNG)
+
+#### Selector
+
+This is the portion of the rule before the first open curly brace ( `{` character). This is what tells the browser what HTML tags this rule 
+applies to. Often, you'll just see a selector that matches an HTML tag, like in this instance- our selector is just "p". However, as we get further 
+into this course, you'll find that there are many ways to target specific HTML elements and many different ways to structure selectors so that you 
+are targeting exactly the part of your site you want to style.
+
+#### Property
+
+This is the portion of the rule between the two curly braces. This is what tells the browser how to style the HTML tag that has been selected. 
+This can be as many lines of code as you choose, each of which has two parts- the property and the value you want that property to be. For our 
+example, "color" is the property and "blue" is the value, but we could also have had a value of "black" or "#FFFFFF" (which is HEX code for white). 
+Each property line is constructed so:
+
+![property line](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/989b2e8ecef6fec3fcc6fd02a5baed58/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-3-1_property_anatomy.PNG)
+
+The style for your page will consist of a list of many CSS rules put together. As we move through this course we will help you build up these rules to style your entire page.
+
+---
+
+#### Module 2: Building CSS rules   2.3 Building a CSS rule   Activity 2.3 - Building your first CSS rule set
+
+# Activity 2.3 - Building your first CSS rule set
