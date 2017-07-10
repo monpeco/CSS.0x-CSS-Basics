@@ -308,3 +308,71 @@ For this activity, please try out some of your favorite Web addresses in this va
 #### Module 2: Building CSS rules   2.3 Building a CSS rule   The anatomy of a CSS rule
 
 # The anatomy of a CSS rule
+
+!> Missing Video/Transcript
+
+### Live coding video: The anatomy of a CSS rule - Demo
+
+!> Missing Video/Transcript
+
+Here's the code from the video in a Code Pen for you to play around with
+
+https://codepen.io/techie4good/pen/JXwWvr
+
+The HTML code is shown below:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My HTML page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> Welcome to my first CSS Website</h1>
+        <h2> I'm glad you're here</h2>
+        <img src="designer.png" alt="designer"/>
+        <p>
+            This is my first site using CSS, or Cascading Style Sheets. I'm still learning and I have a long way to go, but doesn't it still look nice?
+It's amazing what a different just some colors and fonts can make!
+        </p>
+    </body>
+</html>
+```
+And the attached CSS file (style.css):
+
+```javascript
+body {
+    background-color: #83AF9B;
+    text-align: center;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    background-color: #FE4365;
+    color: #F9CDAD;
+    font-size: 8em;
+    padding: 50px;
+}
+h2 {
+    color: #FE4365;
+    background-color: #F9CDAD;
+}
+img {
+    height: 250px;
+}
+p {
+    background-color: #FC9D9A;
+    color: white;
+    padding: 50px;
+    font-size: 2em;
+}
+```
+
+---
+
+#### Module 2: Building CSS rules   2.3 Building a CSS rule   Constructing your CSS rules
+
+# Constructing your CSS rules
