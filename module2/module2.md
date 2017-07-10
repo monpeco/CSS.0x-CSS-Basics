@@ -282,3 +282,29 @@ Or of you are looking for more in-depth training, we suggest you check out one o
 #### Module 2: Building CSS rules   2.2 HTML review   Activity 2.2 and discussion
 
 # Activity 2.2 and discussion
+
+Practice with HTML Validator
+
+HTML has been available to the public since 1991, but since then a lot has changed. One of the ways to make sure your HTML is well structured and up to date is to use the W3C HTML Validator. As you are developing your pages, it's a good idea to regularly check if your HTML is written according to W3C standards.
+
+You can find the validator here: https://validator.w3.org/
+
+You can pass any URL on the Web into the validator, and it will tell you how the HTML for that page stacks up against Web Standards. If you pass in https://www.w3.org (the W3C's homepage), you see the following:
+
+
+If you start to try out other URLs, you might find this is a very rare result ;) 
+Try passing in your favorite Web address and see what comes up. For example, If you pass in https://www.microsoft.com/en-us/, you get 567 warnings and errors! 
+
+One of the more common errors is using an HTML tag that is considered obsolete. Often the error points you to this wiki page "[Use CSS instead](https://wiki.whatwg.org/wiki/Presentational_elements_and_attributes)".
+
+For this activity, please try out some of your favorite Web addresses in this validator and see what happens. Find a page that has one of these types of errors and answer the following questions in the discussion board:
+
+* What URL gave you errors?
+* How many warnings and errors does this site have?
+* What HTML attribute does it use when it should use CSS instead?
+
+---
+
+#### Module 2: Building CSS rules   2.3 Building a CSS rule   The anatomy of a CSS rule
+
+# The anatomy of a CSS rule
