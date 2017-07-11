@@ -647,3 +647,79 @@ Output:
 #### Module 2: Building CSS rules   2.4 Attaching CSS to HTML using selectors   Combining multiple selectors
 
 # Combining multiple selectors
+
+You can imagine that multiple HTML elements on your page will have similar style. If you write a separate CSS rule with the same properties for each of these elements, your CSS file can get very large and hard to manage. When designing CSS, the authors wanted to help make it as easy as possible to write and edit style sheets "by hand", so there are a number of features that help keep your styles succinct.
+
+For example, what if you want to change the font that is consistent across many elements? You would have to change it in many places. Instead, you can combine multiple selectors on the same rule like so:
+
+
+```css
+p, ul, ol {
+   color: blue;
+   background-color: pink;
+}
+```
+The comma means that each of these elements should have the same, duplicated style. No need to have repeated style! Of course, you could simply apply this style to an element that contains all of these, say the body element, but **not all properties are inherited** so using the comma is a direct way to apply consistent style across multiple categories of HTML elements.
+
+Here is a Code Pen that explores using the comma to combine selectors.
+https://codepen.io/techie4good/pen/RGbyLR
+
+HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My HTML page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Title 1</h1>
+        <h2>Title 2</h2>
+        <ul>
+            <li>art of the reason a well structured HTML document is so important</li>
+            <li>is because HTML elements inherit stylistic properties</li>
+            <li>You can see it's basic structure from the way I have formatted the tags with tabbing</li>
+        </ul>
+        <h3>Title 3</h3>
+        <ol>
+            <li>but here is a more visual representation of the hierarchy of tags</li>
+            <li>Tags that contain other tags are parents</li>
+            <li>and the tags inside of them are their children in the following tree representation</li>
+        </ol>
+    </body>
+</html>
+```
+
+
+```css
+body {
+    color: #660099;
+}
+ 
+h1,h2,h3 {
+    font-family: Impact, sans-serif;
+}
+ 
+ul,ol {
+    font-family: helvetica, sans-serif;
+}
+ 
+h2,ul {
+    font-style: italic;
+}
+ 
+h3,ol {
+    text-decoration: underline;
+}
+```
+Output:
+
+![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/5ec613c3818f6c12089c5073749b4cbb/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-4-3_combining_selectors.PNG)
+
+---
+
+#### Module 2: Building CSS rules   2.4 Attaching CSS to HTML using selectors   Activity 2.4 - Apply your own selectors
+
+# Activity 2.4 - Apply your own selectors

@@ -1,0 +1,19 @@
+body {
+    color : #660099;
+}
+
+h1, h2, h3 {
+    font-family : Impact, sans-serif;
+}
+
+ul, ol {
+    font-family : helvetica, sans-serif;
+}
+
+h2, ul {
+    font-style : italic;
+}
+
+h3, ol {
+    text-decoration : underline; 
+}
