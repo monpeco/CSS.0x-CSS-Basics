@@ -411,3 +411,76 @@ The style for your page will consist of a list of many CSS rules put together. A
 #### Module 2: Building CSS rules   2.3 Building a CSS rule   Activity 2.3 - Building your first CSS rule set
 
 # Activity 2.3 - Building your first CSS rule set
+
+Now that you have a basic understanding of how to put the pieces of a CSS rule together, let's do some practice. Here is some HTML for a page you will style:
+
+https://codepen.io/w3devcampus/pen/zovzwE
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>My HTML page</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <h1>My H1 header</h1>
+      <p> This is a block of text to represent a paragraph that you will want to style. This might be an explanation of of the list that follows, it is all contained within a single paragraph tag.
+      </p>
+      <ul>
+         <li>This is list item 1</li>
+         <li>Item 2 in the list</li>
+         <li>The third item in the list</li>
+         <li>Item 4 completes the list</li>
+      </ul>
+   </body>
+</html>
+```
+
+Your goal is to get this HTML to look like the following image in the browser:
+
+![how to look](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/281e5aca6aa05f7826bc32210e8200a4/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/css-intro-2-3-1-final.png)
+
+To do so, you will need to write 4 CSS Rules. You will need to use the following 4 selectors:
+
+* body
+* h1
+* p
+* ul
+
+And you will need the following properties:
+
+* background-color: silver;
+* background-color: purple;
+* color: white;
+* color: fuchsia; 
+
+
+Now it's up to you to combine these selectors and properties into 4 rules to achieve the final style. 
+
+
+```css
+body {
+  background-color : purple;
+}
+
+h1{
+  color : white;
+}
+
+ul{
+  background-color : silver;
+}
+
+p{
+  color : fuchsia;
+}
+```
+
+---
+
+#### Module 2: Building CSS rules   2.4 Attaching CSS to HTML using selectors   What is a selector?
+
+# What is a selector?
+
