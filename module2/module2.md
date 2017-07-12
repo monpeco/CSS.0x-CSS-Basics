@@ -718,6 +718,8 @@ Output:
 
 ![](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/5ec613c3818f6c12089c5073749b4cbb/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-4-3_combining_selectors.PNG)
 
+##Review with CH
+
 ---
 
 #### Module 2: Building CSS rules   2.4 Attaching CSS to HTML using selectors   Activity 2.4 - Apply your own selectors
