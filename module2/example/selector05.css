@@ -2,8 +2,10 @@ body {
     color : #660099;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, #last {
     font-family : Impact, sans-serif;
+    /*color : black;*/
+    font-size: 36px;
 }
 
 ul, ol {
