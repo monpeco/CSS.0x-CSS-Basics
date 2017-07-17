@@ -725,3 +725,78 @@ Output:
 #### Module 2: Building CSS rules   2.4 Attaching CSS to HTML using selectors   Activity 2.4 - Apply your own selectors
 
 # Activity 2.4 - Apply your own selectors
+
+Now it's your turn to practice with some selectors of your own. 
+
+Let's say you have the following HTML and CSS (see the Code Pen with Code Stub), or see below:
+
+See the Pen RoKLKE by W3Cx (@w3devcampus) on CodePen.
+
+HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My HTML page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Main Title</h1>
+        <p>          
+In unit 2.3, we defined a CSS selector as the portion of the CSS rule that tells the browser on which HTML element to apply the defined style. When your HTML is simple, the selectors can be simple as well. The most basic selectors simply mirror the HTML tag. For example "p" attaches to all &lt;p&gt; tags, "img" will attach to all &lt;img&gt; tags and so on. As you can imagine, there will often be times when you don't want every single HTML element of a particular type to have identical style. In Module 3, we'll discuss a variety of ways to use selectors to attach to specific HTML elements.
+In unit 2.2, we briefly mentioned the fact that properties apply to the entire hierarchy of HTML elements to which they are attached. This means that you will have to be very careful which selectors you choose to use in combination with your chosen style. When choosing your selector you might want to keep the following aspects of an HTML element in mind
+            </p>
+            <h2>Sub Title 1</h2>
+            <ul>
+                <li>How many of these HTML elements are on my page?</li>
+                <li>Do I want this style to apply to every one of these elements?</li>
+                <li>What are this HTML element's children</li>
+            </ul>
+            <h2>Sub Title 2</h2>
+            <ol>
+                <li>and do I want this style to apply to them as well?</li>
+                <li>Is this element a block element or an inline element</li>
+                <li>and does this style make sense in that context?</li>
+            </ol>
+    </body>
+</html>
+```
+
+```css
+/*selector here*/  {
+    background-color: #ccffcc;
+    color: #336600;
+}
+ 
+/*selector here*/  {
+    background-color: #336600;
+    color: #ccffcc;
+}
+ 
+/*selector here*/  {
+    border: 3px solid;
+}
+ 
+/*selector here*/  {
+    background-color: #ffff99;
+}
+ 
+/*selector here*/  {
+    text-decoration: underline;
+}
+```
+
+As you can see, there is HTML and some CSS rules, but the rules are missing their selectors. 
+You will need to figure out which selectors belong on top of each of the 5 rules so that your final site looks exactly like this:
+
+![own-selector](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/7a94f41eeffe7790d4fa52b20165a4d4/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-4-4_sol.PNG)
+
+HINT: Some of the rules require multiple comma separated selectors.
+
+---
+
+#### Module 2: Building CSS rules   2.5 Applying styles using CSS properties   What is a property?
+
+# What is a property?
