@@ -906,3 +906,131 @@ Other resources:
 #### Module 2: Building CSS rules   2.5 Applying styles using CSS properties   Font properties
 
 # Font properties
+
+Font is an extremely important part of how you communicate content to your user. As you are likely aware there are many different aspects to 
+font, and with CSS you can explicitly style each aspect. 
+[Here is a quick reference for what the fonts look like with different properties](https://www.w3.org/Style/Examples/007/fonts).
+
+#### font-family
+```css
+p {
+   font-family: Helvetica, Verdana, sans-serif;
+}
+```
+This property sets the font face. There are a collection of Web safe fonts that generally each browser has agreed to support, but there is an infinite number of different fonts. The problem is they might not all look the way you want them to on different browsers.
+
+That is why this property "font-family" allows a list of fonts in the order of your preference. This comma-separated list orders your font preference from left to right. In our above example, our first choice is Helvetica, if the browser doesn't support that it will move to the next on the list, Verdana, and if it still doesn't support that it will just pick any sans-serif font it does support. You should always end your font family with fonts that are likely to be supported by the browser, this way I am guaranteed to have control over the font-family.
+
+Something to keep in mind: some fonts have names with multiple words like `Times New Roman` or `Century Gothic`. When using these fonts you'll need to surround the entire name with quotes so the browser understands that is a single font name like so:
+
+```css
+p {
+   font-family: "Times New Roman", "New Century Schoolbook", serif;
+}
+```
+[Documentation](https://www.w3.org/TR/css-fonts/#font-family-prop       https://www.w3.org/Style/Examples/007/fonts.en.html))
+
+#### font-size
+```css
+h1 {
+   font-size: 2.5em;
+}
+```
+Font-size sets the overall scale of your text. You can use a lot of different units to set the font size. Some of these units you are probably 
+familiar with if you have used text editors before such as `pt` size or you can use `px` size. However, these methods are not advised because 
+they are static and will not adapt based on screen size. 
+
+The ideal way to set text size is to use `em`. **Em** is a way to set your text size based on the system settings of the device in which you 
+are viewing that font. This becomes especially important for users who have special font preferences due to accessibility requirements. To use 
+`em` do not set `font-size` on the body tag, but instead set the size for each element in relation to the user's default. For example, `1em` is 
+the default, `2em` is twice as big, `0.5em` is half as big etc. 
+[Here are some more font sizing tips and tricks](https://www.w3.org/Style/Examples/007/units.en.html).
+
+```css
+
+```
+[Documentation](https://www.w3.org/TR/css-fonts/#font-size-prop)
+
+#### font-style
+
+```css
+p {
+   font-style: italic;
+}
+```
+The font style property adjusts the angle of the letters in relation to the horizontal plane. Italic forms are generally cursive in nature while 
+oblique faces are typically sloped versions of the regular face.
+
+[Documentation](https://www.w3.org/TR/css-fonts/#font-style-prop)
+
+#### text-decoration
+
+```css
+p {
+   text-decoration: underline;
+}
+```
+Text-decoration adds a line across your text. You can set this line to be underneath your text, underline, through your text, line-through, 
+or on top, overline.
+
+[Documentation](https://www.w3.org/TR/css-text-decor-3/#text-decoration-property)
+
+#### Example:
+
+Here is a CodePen exploring each of these styles.
+https://codepen.io/techie4good/pen/ozvqxy
+
+HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My HTML page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Main title</h1>
+        <h2>Sub title</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia consequat nibh, non commodo neque maximus semper. Vivamus non ultricies massa, vel convallis nunc. Aenean tempus risus at orci faucibus, eget hendrerit elit sodales. Quisque imperdiet diam nibh, ut semper enim dapibus et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean in feugiat neque. Nunc eget libero mauris. Maecenas condimentum luctus nulla.
+Nulla a sem orci. Cras eget neque viverra, condimentum nulla et, tincidunt libero. In sit amet quam purus. Aliquam erat volutpat. Sed hendrerit urna quis sapien mattis dictum. Etiam vehicula tortor eu libero finibus dapibus. Mauris nunc neque, sodales nec est sed, gravida convallis sem. Nam vulputate sed est sed eleifend. Quisque sodales elit at ornare vulputate.
+Morbi quis metus tortor. Cras dapibus nisl urna, et pretium risus rutrum at. Maecenas a sollicitudin elit. Ut suscipit neque ligula. Nam aliquam massa in pretium ullamcorper. Sed id nisl et mauris maximus suscipit. Suspendisse potenti. Nulla interdum, magna eu facilisis aliquam, tellus nulla luctus nisi, eu cursus magna sapien sed mi.
+        </p>
+    </body>
+</html>
+```
+
+CSS code:
+
+```css
+body {
+    font-family: Helvetica, Verdana, sans-serif;
+    font-size: 12pt;
+}
+h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+h2 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+p {
+    font-weight: bold;
+}
+```
+
+External resources:
+
+There are even more ways to adjust text appearance and you can read more about them here: 
+
+* [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts/)
+* [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor/)
+
+---
+
+#### Module 2: Building CSS rules   2.5 Applying styles using CSS properties   Spacing properties
+
+# Spacing properties
