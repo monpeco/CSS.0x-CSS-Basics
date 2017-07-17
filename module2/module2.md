@@ -834,3 +834,75 @@ different value options and you can even change them and watch the Web site upda
 #### Module 2: Building CSS rules   2.5 Applying styles using CSS properties   Color properties
 
 # Color properties
+
+Color is one of the first things you'll want to explore when designing your Web site. Thankfully, CSS provides a wide array of tools for you to control the color of different HTML elements. There are basic color properties:
+
+#### color
+
+This property sets the foreground color of an element's text content. By default, all text content will be set to black. If you set the color on one HTML element it will be inherited by all HTML elements within that. For example, if you set the color property on the body tag to blue, all text on your web page will be changed to blue, unless that text has a more specific color property that will override it. 
+
+[Documentation](https://www.w3.org/TR/css3-color/#foreground)
+
+#### background-color
+
+This property sets the background color of an element. This color then represents the exact space the element takes up, which is always a rectangular area. The default value is 'transparent' which means whatever is behind the element will shine through. Note that background-color is one example of a property that is not inherited, so you will have to directly set the background-color on each element. To set the overall color of your page, apply a background color to the body tag, and since all other element's background colors will be transparent by default, it will appear as if everything has that same background color. 
+
+[Documentation](https://www.w3.org/TR/css3-background/#the-background-color)
+
+
+#### color as a value
+
+These color properties take in a color as their value, and there are three different ways you can define that color: **keyword**, a **HEX code** or an **rgb value**.
+
+#### 1. keyword
+
+Probably the simplest and least flexible way to set colors is using a keyword. A keyword is one of the predefined colors like "blue" or "green". 
+
+```css
+body {
+   background-color: teal; 
+}
+```
+There are 16 predefined colors based on keywords: aqua, black, blue, fuchsia,gray, green, lime, maroon, navy, olive, purple, red, silver, teal, yellow, white and orange. 
+You can read more about these keyword colors [here](https://www.w3.org/TR/CSS22/syndata.html#value-def-color)
+
+#### 2. HEX
+
+A HEX code is a 6 character code to represent the color, giving you a lot more options. The 6 characters of the code are broken into 3 sets of 2, where each set of 2 represents the amount of either red, green or blue that makes up the color. These sets are hexadecimal numbers, which means that each ranges between 00 to FF where 00 means no color and FF means all of that color. Thus #000000 represents pure black and #FFFFFF represents pure white.
+
+When using a hex code in CSS you must put a hash character in front of the 6 characters like so:
+
+```css
+body {
+   background-color: #00CC00; /* green */
+}
+```
+
+#### decimal
+
+You can also specify colors using rgb in decimal form like so:
+```css
+body {
+   background-color: rgb(0,204,0); /*same green as above*/
+}
+```
+This will give you the same range as HEX values. This method is a less common, but it's up to you which method of specifying colors you prefer. 
+
+[Documentation](https://www.w3.org/TR/CSS22/syndata.html#value-def-color)
+
+Here are some of the colors you can use, and the three different ways you can set their value in the color or color-background property:
+
+![color table](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/f3568defc277a8c99de86bd557a17f68/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/colors-rgb.png)
+
+You can see these color properties in action using all three approaches to setting the value in this [CodePen](https://codepen.io/techie4good/pen/PGYRYL).
+
+Other resources:
+
+* We will discuss how to pick a good color palette for your site in Module 5, but in the mean time here is a good wiki article from the [W3C discussing the general use of colors on the Web](https://www.w3.org/wiki/Colour_theory).
+* More color units are described in the [CSS3 specification](https://www.w3.org/TR/css3-color/#colorunits).
+
+---
+
+#### Module 2: Building CSS rules   2.5 Applying styles using CSS properties   Font properties
+
+# Font properties
