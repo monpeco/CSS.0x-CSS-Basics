@@ -800,3 +800,37 @@ HINT: Some of the rules require multiple comma separated selectors.
 #### Module 2: Building CSS rules   2.5 Applying styles using CSS properties   What is a property?
 
 # What is a property?
+
+In unit 2.3, we briefly introduced you to "properties", the part of the CSS rule that tells the browser how to style specific aspects of the 
+selected HTML element.
+
+There is a huge array of different aspects you can style: color, font, size, spacing and much more! You can find the complete list of CSS 
+properties at the [W3C's official site here](https://www.w3.org/Style/CSS/all-properties#list), or check out [Meiert's list here](https://meiert.com/en/indices/css-properties/).
+
+Every property has its own collection of possible values. Some require text input, some specific keywords, some numerical input, etc.
+
+Here are some examples of properties that each accept a different style of value:
+https://codepen.io/techie4good/pen/bwbLJP
+
+```css
+body {
+    background-color: purple; /* key word */
+    color: #FFFFFF; /* HEX code */
+    width: 60%; /* percentage */
+    font-size: 20pt; /* numerical value */
+}
+```
+Sometimes the easiest way to learn about different properties is to explore the style on one of your favorite Web sites. You can use your browser tool to inspect an HTML element. Here is an example of inspecting a title:
+
+![the easiest way](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/93820e63bdf7f44e865bffb7126582f9/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-5-1_browser_tool.png)
+
+If you are not sure how to do this, please refer to the demo in unit 1.3 to see this in action while inspecting CSS Zen Garden designs. 
+
+As you can see, the browser tools display the value of the properties, and if you click into that space it will even give you some of the 
+different value options and you can even change them and watch the Web site update dynamically. 
+
+---
+
+#### Module 2: Building CSS rules   2.5 Applying styles using CSS properties   Color properties
+
+# Color properties
