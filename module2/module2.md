@@ -1165,3 +1165,89 @@ p {
 #### Module 2: Building CSS rules   2.5 Applying styles using CSS properties   Activity 2.5 - Adding your own properties
 
 # Activity 2.5 - Adding your own properties
+
+Now that you have a few properties in your CSS toolbox, let's practice using them. 
+
+Here is some HTML and CSS, but as you can see the CSS rules have selectors but no properties. See this Code Pen of Code Stub.
+
+HTML code:
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My HTML page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Adding Properties</h1>
+        <h2>Using Colors, Fonts and Spacing</h2>
+        <p>          
+        There is a huge array of different aspects you can style: color, font, size, spacing and much more! For a complete list of official CSS properties look here: https://www.w3.org/Style/CSS/all-properties#list or http://meiert.com/en/indices/css-properties/
+        </p>
+        <ol>
+            <li>Make sure to look up what the available values are before using a property</li>
+            <li>because if the browser doesn't understand your value it will typically just skip applying any style</li>
+            <li>This is where programs like Visual Studio Code come in handy</li>
+            <li>because as you type out the property the program will automatically suggest possible values for you </li>
+            <li>Sometimes the easiest way to learn about different properties is to explore the style on one of your favorite websites</li>
+        </ol>
+        <p>     
+If you aren't sure how to do this refer to the demo in unit 1.3 to see this in action while inspecting CSS Zen Garden designs. As you can see, the browser tools display the value of the properties, and if you click into that space it will even give you some of the different value options and you can even change them and watch the Web site update dynamically.
+        </p>
+    </body>
+</html>
+```
+CSS code:
+
+```css
+body {
+ 
+}
+ 
+h1 {
+ 
+}
+ 
+ 
+h2 {
+ 
+}
+ 
+ol {
+ 
+}
+ 
+li {
+ 
+}
+ 
+p {
+ 
+}
+```
+As you can see, these CSS rules have selectors, but no properties. For this activity, it is up to you to add the 
+correct properties and set their values appropriately to achieve this final style:
+
+![excercise](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/a1594384f91556ed990dff48f258fb76/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-5-5_Activity.PNG)
+
+Here are the color HEX code used above:
+
+* light yellow: #ffff99
+* medium yellow: #ffcc00
+* orange: #ff6600
+
+Here are the fonts used above:
+
+* Helvetica
+* Impact
+* Courier New
+* 
+
+---
+
+#### Module 2: Building CSS rules   2.6 Style studies   Style studies
+
+# Style studies
