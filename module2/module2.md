@@ -1379,3 +1379,115 @@ https://codepen.io/techie4good/pen/ZpOvBd?editors=1100#0
 #### Module 2: Building CSS rules   2.6 Style studies   Buttons
 
 # Buttons
+
+Buttons are a key way that your users will interact with your page. Often buttons are a call to action for your user- so you will want them to stand out!
+
+When styling a button you aren't just styling the text, but also the area around it, including the border. By giving them a distinct background color or border you make it clear that this whole area is "clickable".
+
+Typically your user will expect your button to be wider than it is tall, to accomplish this you'll want to set the left and right padding to be greater than the top and bottom paddings. 
+
+Here is an example of a button where it's not immediately clear that it is actually a button. 
+
+![button](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/3ec1adc280691fe02ccb2d38c3029a8c/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/button-failed.PNG)
+
+Button 1
+
+This design is a pretty traditional button where it has a distinct background-color and border-color to help it stand out from both the background and the body text.
+
+![button1](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/71258305acbafe9ca8d4bcd0d5aebe10/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-6-2_button_1.PNG)
+
+
+```css
+#design1 {
+    background-color: #94618E;
+    color: #F8EEE7;
+    font-family: Corbel;
+}
+#design1 button {
+    background-color: #F4DECB;
+    padding: 10px 25px;
+    border: 5px solid #F8EEE7;
+    color: #49274A;
+    font-weight: bold;
+    font-size: 1.2em;
+ }
+```
+Button 2
+
+This is a more modern button design where there is no distinct border, but just a flat color background.
+
+![button2](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/546df96b5a1e929d2b85b95614013c05/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-6-2_button_2.PNG)
+
+```css
+#design2 {
+    background-color: #D9D9D9;
+    color: white;
+    font-family: "Century Gothic", sans-serif;
+}
+#design2 button {
+    background-color: #4484CE;
+    border: 0px;
+    color: white;
+    padding: 10px 50px;
+    font-family: Impact, sans-serif;
+    font-size: 1.3em;
+}
+```
+Button 3
+
+This is a big graphic button that uses border-radius to give the button rounded corners.
+
+![button3](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/7f2cfe384e3c3678086d305452ffa48c/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/2-6-2_button_3.PNG)
+
+```css
+#design3 {
+    font-family: Impact, sans-serif;
+    font-size: 2em;
+}
+ 
+#design3 button {
+    font-family: Impact, sans-serif;
+    font-weight: 100;
+    background-color: white;
+    border: 7px #EC576B solid;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+```
+
+Here are three different ways to style buttons you can play around with.
+https://codepen.io/techie4good/pen/ORXzoo?editors=1100#0
+
+---
+
+#### Module 2: Building CSS rules   2.6 Style studies   Activity 2.6 and discussion
+
+# Activity 2.6 and discussion
+
+### Effective titles and buttons
+
+Now that you know a bit more about how CSS is written, you will start to understand and notice more of the design elements 
+as you navigate around the Web. 
+
+In this module's style studies section, you learned some effective ways to style titles and buttons. You also learned about 
+some design choices that make your titles and buttons not as effective...
+
+Titles shouldn't be overly styled. They should only have a few properties set to help them stand out from body text, but not 
+too many otherwise they will be too busy.
+
+Buttons should send a clear message that they need to be interacted with. If a button doesn't show up as a rectangle, a 
+user typically won't understand that it's a button.
+
+For this activity, please find a Web page that has either titles or buttons and discuss how effectively they are styled. 
+In the discussion below, answer the following questions:
+
+* Which Web page are you evaluating?
+* Is their use of titles or buttons as effective as they can be?
+* What do you like about their title or button design?
+* What would you change about their title or button design to be more effective?
+
+---
+
+#### Module 2: Building CSS rules   2.7 Project 2 - About me page   Module 2 project - About me page
+
+# Module 2 project - About me page
