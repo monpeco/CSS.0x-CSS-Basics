@@ -1491,3 +1491,42 @@ In the discussion below, answer the following questions:
 #### Module 2: Building CSS rules   2.7 Project 2 - About me page   Module 2 project - About me page
 
 # Module 2 project - About me page
+
+Now that you have played around with applying selectors and properties, you have the tools to make a much more sophisticated 
+Web page than "Hello Your World". 
+
+For your module project, you are going to create a page describing yourself using your favorite colors. Your Web page must 
+have the following content:
+
+* an h1 title with your name
+* an h2 title with your favorite quote
+* a paragraph describing your favorite hobbies
+* an ordered list of your favorite foods
+* an unordered list of your favorite websites, including links to them
+
+And in addition, you must employ the following styles:
+
+* 3 different font colors
+* 2 different background colors
+* a serif font
+* a sans-serif font
+* italic text
+* bold text
+* 1 border
+* extra margin between the edge of the screen and your content
+* extra padding around your list items
+
+For example, here is what my page looks like:
+
+![example-page](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/152ba1416a059133e7dcd8af8480df6b/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/css-intro-2-6-1.png)
+
+Note: you are welcome to look up other styles and apply them however you like as long as you at least have the above 
+requirements met.
+
+We've set up a discussion forum below, in case you want to share your work!
+
+---
+
+#### Module 2: Building CSS rules   2.8 Conclusion and exercises   After Module 2 you should be able to...
+
+# After Module 2 you should be able to...
