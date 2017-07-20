@@ -1251,3 +1251,13 @@ Here are the fonts used above:
 #### Module 2: Building CSS rules   2.6 Style studies   Style studies
 
 # Style studies
+
+In each unit, we will have a section like this one where we profile specific aspects of Web sites and the various ways you can use CSS to style them. This is intended to give you practical examples of how to apply the CSS you are developing along the way. 
+
+Each style study will discuss the different concerns of styling a given element and three sample styles.
+
+---
+
+#### Module 2: Building CSS rules   2.6 Style studies   Titles
+
+# Titles
