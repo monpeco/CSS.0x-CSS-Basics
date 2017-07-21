@@ -1,3 +1,8 @@
+/*Add separation */
+body{
+   margin: 50px 80px 20px 80px;
+}
+
 /*Styling for name*/
 h1{
   color : #002255;
@@ -19,6 +24,11 @@ h3{
   font-family : sans-serif;
 }
 
+/*distintic border style for paragraph*/
 p{
   border: 2px black solid;
+}
+
+li{
+  padding : 5px 10px 5px 10px;
 }
