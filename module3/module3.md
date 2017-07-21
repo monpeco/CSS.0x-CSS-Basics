@@ -298,3 +298,77 @@ p:active {
 #### Module 3: Specific HTML element targeting with CSS selectors   3.3 CSS pseudo-classes   Activity 3.3 and discussion
 
 # Activity 3.3 and discussion
+
+Now it's your turn to try out some pseudo classes. Here is a Web page.
+
+See the Pen Practice with Pseudoclasses
+https://codepen.io/techie4good/pen/rraNJr/
+
+```css
+body {
+   background-color: #006666;
+   color: white;
+}
+h1 {
+   text-decoration: underline;
+}
+input {
+   border: 3px white solid;
+}
+input {
+   border: 3px yellow solid;
+}
+input {
+   background-color: yellow;
+   border: 3px yellow solid;
+}
+button {
+   background-color: white;
+   color: #006666;
+   border: 3px white solid;
+}
+button {
+   background-color: #006666;
+   color: white;
+}
+button {
+   background-color: #33cc99;
+}
+li {
+   background-color: white;
+   color: #006666;
+}
+li {
+   background-color: #33cc99;
+   color: white;
+}
+a {
+   color: white;
+}
+a {
+   color: #33cc99;
+}
+```
+If you look at the CSS for this page you'll notice there are multiple CSS rules with the same selectors. 
+That is because some of these rules need to have pseudo classes applied.
+
+Please add pseudo-classes to the existing rules so that:
+
+* The title is underlined when the user hovers their mouse over the text
+* The input box gets a yellow border when the user hovers their mouse over the box
+* The input box has a yellow background when the user clicks inside the box
+* When the user hovers over the button it gets a background color of #006666 (dark green) and a text color of white
+* When the user clicks the button it gets a background color of #33cc99 (light green)
+* The background color of the list elements turns white and the text turns #006666 (dark green) when the user hover overs them
+* When clicked, the list elements get a background color of #33cc99 (light green) while the text stays white
+* The links at the bottom of the page start out as white in color and then when they are clicked they turn #33cc99 (light green)
+
+The resulting output should look like this when the user has not interacted with the page in any way:
+
+![pseudo-classes](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/17c251eec9c7e28a5214a2888df27bef/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/3-3_activity.PNG)
+
+---
+
+#### Module 3: Specific HTML element targeting with CSS selectors   3.4 Combining selectors   Meet contextual selectors
+
+# Meet contextual selectors
