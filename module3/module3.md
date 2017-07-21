@@ -149,3 +149,43 @@ Output:
 #### Module 3: Specific HTML element targeting with CSS selectors   3.2 Using HTML classes and IDs   Activity 3.2 and discussion
 
 # Activity 3.2 and discussion
+
+Here is some HTML and CSS. As you can see it's not too interesting, because not all of the styles are applied to the HTML.
+
+```css
+body {
+   background-color: #00ccff;
+   color: white;
+   font-family: Helvetica, sans-serif;
+   margin: 35px 25px 0px 25px;
+}
+p,h2 {
+   padding: 10px;
+}
+.topSection{
+   background-color: #3300cc;
+   color: #cccccc;
+}
+.bottomSection {
+   background-color: #cccccc;
+   color: #3300cc;
+}
+#importantItem {
+   text-decoration: underline;
+   color: #99ff99;
+}
+#unimportantItem {
+   color: gray;
+}
+```
+https://codepen.io/techie4good/pen/VKkJYd
+
+In this activity, your job is to add the HTML id and class attributes to the correct elements so that you get a final result that looks like this:
+
+![activity32](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/2d0d454c1dd43e5cc10ca355082a61bc/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/3-2-2_activity.PNG)
+
+---
+
+#### Module 3: Specific HTML element targeting with CSS selectors   3.3 CSS pseudo-classes   Meet CSS pseudo-classes
+
+# Meet CSS pseudo-classes
