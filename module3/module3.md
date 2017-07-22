@@ -599,3 +599,103 @@ ol {
 ```
 
 
+---
+
+#### Module 3: Specific HTML element targeting with CSS selectors   3.4 Combining selectors   Cascading styles
+
+# Cascading styles
+
+### Video: C is for "Cascading"
+
+https://youtu.be/A6tm_dPgzVQ
+
+### Cascading styles
+
+Now that you've learned all these different selectors, you've probably noticed that there is nothing preventing 
+one from creating rules that overlap, meaning creating rules that apply style to the same HTML elements. In fact, 
+it's very common for HTML elements on a page to have multiple CSS rules competing for importance. 
+
+Thanks to the "cascading" part of "Cascading Style Sheets", this isn't a problem. That is because CSS has a way 
+to figure out which rule "wins" when styles are conflicting. CSS actually computes a "weight" for each style rule 
+and the one with the greatest weight wins. If you want all the specifics on how this weight is computed you can 
+read more [here](https://www.w3.org/TR/CSS22/cascade.html). For simplicity's sake, the most specific rule wins! 
+
+* A rule is generally more specific if it applies to a fewer number of elements than another rule that encompasses those elements. The more facets a rule has the more specific it is.
+* When pseudo-classes are applied this is more specific than without the pseudo-class. For example, p:hover will win over just p. 
+* Contextual selection is more specific because it scopes the rule to elements within a certain subset of those on the page. For example, a rule that applies to all the paragraphs within articles is more specific than a rule that applies to all the paragraphs on the page.
+* IDs are most specific because you are directly applying them to the desired HTML element. The rule based on an ID will always win over other rules
+* If two rules have the exact same weight, the one that comes later in the CSS document is what is applied.
+* You can use the "!important" modifier on a CSS property so that it will guarantee that style will be applied. This is a way for you to override the calculated weight.
+
+Look at the corresponding HTML and CSS, where code showing how Cascading order applies with many overlapping rules:
+
+https://codepen.io/techie4good/pen/YGPNVL
+
+```html
+<!DOCTYPE html>
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+  <body>
+    <section>
+      <h3>Section 1</h3>
+      Now that you've learned all these different selectors, you've probably noticed that there is nothing preventing one from creating rules that overlap, meaning creating rules that apply style to the same HTML elements. In fact, it's very common for HTML elements on a page to have multiple CSS rules competing for importance.
+    </section>
+    <section>
+      <h3>Section 2</h3>
+      Thanks to the "cascading" part of "Cascading Style Sheets", this isn't a problem. That is because CSS has a way to figure out which rule "wins" when styles are conflicting. CSS actually computes a "weight" for each style rule and the one with the greatest weight wins. If you want all the specifics on how this weight is computed you can read more here. For simplicity's sake, the most specific rule wins!  
+      <section>
+        <h3>Section 3</h3>
+        A rule is generally more specific if it applies to a fewer number of elements than another rule that encompasses those elements. The more facets a rule has the more specific it is.
+        <section>
+          <h3>Section 4</h3>
+          When pseudo-classes are applied this is more specific than without the pseudo-class. For example, p:hover will win over just p.
+        </section>
+      </section>
+    </section>
+    <section id="section">
+      <h3>Section 5</h3>
+      Contextual selection is more specific because it scopes the rule to elements within a certain subset of those on the page. For example, a rule that applies to all the paragraphs within articles is more specific than a rule that applies to all the paragraphs on the page.
+    </section>
+  </body>
+</html>
+```
+
+```css
+section {
+  color: red;
+}
+section section {
+  color: orange;
+}
+section section section {
+  color: green;
+}
+#section {
+  color: blue;
+}
+section:hover {
+  color: purple;
+}
+section:hover section:hover {
+  color: pink;
+}
+section:hover section:hover section:hover {
+  color: yellow;
+}
+```
+![rules](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/763b325de4e1aa809898376c050a0edb/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/3-4-3_cascading.PNG)
+
+Things to observe about the above:
+
+* the rule based on an ID isn't even overwritten by the pseudo class
+* when you hover over the sections within other sections, multiple hover rules apply!
+
+---
+
+#### Module 3: Specific HTML element targeting with CSS selectors   3.4 Combining selectors   Activity 3.4.2 and discussion
+
+# Activity 3.4.2 and discussion
+
