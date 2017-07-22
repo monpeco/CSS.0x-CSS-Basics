@@ -372,3 +372,110 @@ The resulting output should look like this when the user has not interacted with
 #### Module 3: Specific HTML element targeting with CSS selectors   3.4 Combining selectors   Meet contextual selectors
 
 # Meet contextual selectors
+
+When you use two selectors separated by a space on a rule, you scope the rule to the elements that correspond 
+to the selector on the right that are INSIDE the elements that correspond to the selector on the left. Let's 
+say we have the following HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <img src="images/pic1.jpg" alt="pic 1" />
+        <p>
+            This is my paragraph full of useful information
+            <img src="images/pic2.jpg" alt="pic 2" />
+            Since there is text around these images they should be styled a little differently.
+            <img src="images/pic3.jpg" alt="pic 3" />
+        </p>
+        <img src="images/pic4.jpg" alt="pic 4" />
+    </body>
+</html>
+```
+
+If we applied the following CSS rule then the images INSIDE the paragraph would be set to a 
+width of 100px, but that rule would not apply to the images outside the paragraph. 
+
+```css
+p img {
+    width: 100px;
+}
+```
+Below is a diagram of the given HTML with the two imgs that will styled by the above rule are indicated by the red arrows. 
+![contextual-selector](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/8a65bf214939ba9bec2a0b48674f222b/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/3-3-1_combinging_selectors.PNG)
+
+As your Web pages get more complex, contextual selectors become more important, because it won't scale to 
+apply classes and IDs to each individual item. Contextual selection becomes especially useful when you 
+structure your HTML with section tags like header, section, article and footer. 
+
+Pay attention to the styles of the paragraphs and lists in the following example:
+https://codepen.io/techie4good/pen/PGwwwo
+
+```html
+<!DOCTYPE html>
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+  <body>
+    <header>
+    <h1>Title</h1>
+    <ol>
+      <li>Blog Post 1</li>
+      <li>Blog Post 2</li>
+      <li>Blog Post 3</li>      
+    </ol>
+    <p>
+     When you use two selectors separated by a space on a rule, you scope the rule to the elements that correspond to the selector on the right that are INSIDE the elements that correspond to the selector on the left. Let's say we have the following HTML:
+    </p>
+    </header>
+    <section>
+        <h2>Blog Post 1</h2>
+      <p>
+        If we applied the following CSS rule then the images INSIDE the paragraph would be set to a width of 100px, but that rule would not apply to the images outside the paragraph. 
+      </p>  
+      <ol>
+            <li>Below is a diagram of the given HTML</li>
+            <li>with the two imgs that will styled by the above rule are indicated by the red arrows</li>
+            <li>As your Web pages get more complex, contextual selectors become more important</li>
+        </ol>
+      </section>
+      <section>        
+        <h2>Blog Post 2</h2>
+        <p>
+     because it won't scale to apply classes and IDs to each individual item. Contextual selection becomes especially useful when you structure your HTML with section tags like header, section, article and footer. 
+        </p>
+        <ol>
+            <li>Here is some code where you can see contextual selectors in action</li>
+            <li>Note that there are differences between p elements and also differences between ol elements.</li>
+        </ol>
+    </section>
+  </body>
+</html>
+```
+
+```css
+p {
+  color: red;
+}
+
+section p {
+  color: blue;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+section ol {
+  list-style-type: lower-roman;
+}
+```
+![contextual](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/c5e971447c473f55ca8f0b39e3ab624b/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/3-4_contextual_selectors.PNG)
+
+---
+
+#### 
