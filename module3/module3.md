@@ -478,4 +478,124 @@ section ol {
 
 ---
 
-#### 
+#### Module 3: Specific HTML element targeting with CSS selectors   3.4 Combining selectors   Activity 3.4.1 and discussion
+
+# Activity 3.4.1 - Contextual selectors
+
+For practice, we are going to learn how to better scope CSS without the crutch of classes and IDs. 
+
+https://codepen.io/techie4good/pen/qaERNj
+
+```html
+<!DOCTYPE html>
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+<body>
+  <header>
+  <h1>Title</h1>
+  <p>
+    When you use two selectors separated by a space on a rule, you scope the rule to the elements that correspond to the selector on the right that are INSIDE the elements that correspond to the selector on the left. Let's say we have the following HTML:
+  </p>
+  <ol>
+    <li>Secton 1</li>
+    <li>Secton 2</li>
+  </ol>
+  </header>
+  <article>
+    <h1>Section 1</h1>
+    <ol>
+      <li>item 1</li>
+      <li>
+        item 2
+        <ol>
+          <li> sub item 1 </li>
+          <li> sub item 2 </li>
+          <li> sub item 3 </li>
+          <li> sub item 4 </li>
+        </ol>
+      </li>
+      <li>item 3</li>
+    </ol>
+    <p>
+     If we applied the following CSS rule then the images INSIDE the paragraph would be set to a width of 100px, but that rule would not apply to the images outside the paragraph. Below is a diagram of the given HTML with the two imgs that will styled by the above rule are indicated by the red arrows. 
+    </p>
+  </article>
+    <article>
+    <h1>Section 2</h1>
+    <ol>
+      <li>
+        item 1
+        <ol>
+          <li> sub item 1 </li>
+          <li> sub item 2 </li>
+        </ol>
+      </li>
+      <li>item 2</li>
+    </ol>
+    <p>
+      As your Web pages get more complex, contextual selectors become more important, because it won't scale to apply classes and IDs to each individual item. Contextual selection becomes especially useful when you structure your HTML with section tags like header, section, article and footer. 
+
+Pay attention to the styles of the paragraphs and lists in the following example:
+    </p>
+  </article>
+  <footer>
+    <h1>Footer</h1>
+    <ol>
+      <li>link 1</li>
+      <li>link 2</li>
+      <li>link 3</li>
+      <li>link 4</li>
+    </ol>
+  </footer>
+</body>
+</html>
+```
+
+```css
+body {
+  font-family: Tahoma, sans-serif; 
+}
+
+header, article, footer {
+  border: 10px #E9B000 solid;
+  margin: 30px;
+}
+
+h1 {
+  color: #E86E80;
+}
+
+h1 {
+  background-color: #E86E80;
+  color: #FFFFFF;
+}
+
+p {
+  background-color: #008F95;
+  color: #FFFFFF;
+}
+
+p {
+  background-color: #FFFFFF;
+  color: #008F95;
+}
+
+ol {
+  background-color: #E24E43;
+  color: #FFFFFF;
+}
+
+ol {
+  background-color: #FFFFFF;
+  color: #E24E43;
+}
+
+ol {
+  border: 5px solid #E24E43;
+}
+```
+
+
