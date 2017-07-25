@@ -699,3 +699,88 @@ Things to observe about the above:
 
 # Activity 3.4.2 and discussion
 
+### Activity 3.4.2 - Cascading order
+
+Cascading order can be difficult to manage.
+
+Look at the corresponding some HTML and CSS:
+
+https://codepen.io/techie4good/pen/BLypxg
+
+```html
+<!DOCTYPE html>
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+  <body>
+    <header>
+      <h1>paragraph 1</h1>
+      <p>
+        Now that you've learned all these different selectors, you've probably noticed that there is nothing preventing one from creating rules that overlap, meaning creating rules that apply style to the same HTML elements. In fact, it's very common for HTML elements on a page to have multiple CSS rules competing for importance. 
+      </p>
+    </header>
+    <section>
+      <h1>paragraph 2</h1>
+      <p>
+        Thanks to the "cascading" part of "Cascading Style Sheets", this isn't a problem. That is because CSS has a way to figure out which rule "wins" when styles are conflicting. CSS actually computes a "weight" for each style rule and the one with the greatest weight wins. If you want all the specifics on how this weight is computed you can read more here. For simplicity's sake, the most specific rule wins! 
+      </p>
+      <article>
+        <h1>paragraph 3</h1>
+        <p>
+          A rule is generally more specific if it applies to a fewer number of elements than another rule that encompasses those elements. The more facets a rule has the more specific it is.
+When pseudo-classes are applied this is more specific than without the pseudo-class. For example, p:hover will win over just p. 
+        </p>
+        <h1>paragraph 4</h1>
+        <p id="specific">
+Contextual selection is more specific because it scopes the rule to elements within a certain subset of those on the page. For example, a rule that applies to all the paragraphs within articles is more specific than a rule that applies to all the paragraphs on the page.
+IDs are most specific because you are directly applying them to the desired HTML element. The rule based on an ID will always win over other rules
+        </p>
+      </article>
+    </section>
+    <footer>
+      <h1>paragraph 5</h1>
+      <p>
+If two rules have the exact same weight, the one that comes later in the CSS document is what is applied.
+You can use the "!important" modifier on a CSS property so that it will guarantee that style will be applied. This is a way for you to override the calculated weight.
+      </p>
+    </footer>
+  </body>
+</html>
+```
+
+```css
+body {
+  background-color: #F8EEE7;
+}
+p {
+  background-color: #F4DECB;
+}
+p {
+  background-color: #94618E;
+  color: #F8EEE7;
+}
+p {
+  background-color: #49274A;  
+}
+p {
+  background-color: #FFFFFF;
+  color: #49274A;
+}
+p {
+  background-color: #B4DBC0 !important;
+  border: 2px dashed black;
+}
+```
+As you can see, there are a lot of repeat CSS rules. For this activity, you cannot change any of the HTML 
+(meaning you cannot add any IDs), but you'll need to change the CSS to make some of the rules more specific so 
+that you achieve this final result:
+
+![Activity 3.4.2](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9900678ca1c8c341096eae766d6f2268/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/3-4-4_sol_1.PNG)
+
+---
+
+#### Module 3: Specific HTML element targeting with CSS selectors   3.5 Style studies   Images
+
+# Images
