@@ -266,3 +266,103 @@ This is why using percentages for width and height are so important, it helps yo
 ####  Module 4: Layout and positioning   4.2 The basics of layout   Padding and margin
 
 # Padding and margin
+
+### Positioning with padding and margin
+
+Whenever possible, it is ideal to position your elements by adjusting their padding and margins. Sometimes this isn't 
+enough to get the element exactly where you'd like it to be, so we'll learn more tools later in this module. Regardless, 
+you'll almost always want some padding and margin around your element so it's best to adjust these before progressing 
+onto more complicated positioning methods.
+
+Once you have set the width for your element, then you can set margins as a way to position your element relative to others. 
+One of the most commonly used margin settings is "auto". That is because if you set an element's left and right margin to 
+auto it will be dynamically centered within its containing block.
+
+```css
+div {
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+}
+```
+However, note that this only works for block HTML elements like paragraphs, divs and headers. If you want to use this to 
+position an inline element, such as img or a, you will need to tell CSS to treat them as block elements by setting `display: block;`
+
+```css
+img {
+   display: block;
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+}
+```
+https://codepen.io/techie4good/pen/ZpYyap
+
+```html
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>this is a centered header</h1>
+    <p>
+      <a href="www.microsoft.com">centered link within a p</a>
+    </p>
+    <section>
+      here is text in a centered section on top of the inner div
+      <div>
+        centered div text within a centered div
+      </div>
+      and here is text in a centered section below the inner div
+    </section>
+  </body>
+</html>
+```
+
+```css
+h1 {
+  background-color: red;
+  width: 50%;
+  margin: 0 auto;
+}
+p {
+  background-color: orange;
+  width: 70%;
+}
+a {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+section {
+  background-color: yellow;
+  width: 70%;
+  margin: 0 auto;
+}
+div {
+  background-color: green;
+  width: 50%;
+  margin: 0 auto;
+}
+```
+
+Here is what the above code looks like in a wide window:
+
+![wide](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/8e7ce50235a81f6e65d0fe91084838bf/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-2-2_wide.PNG)
+
+Now, if you resize the window, the elements remain centered no matter what. Here is the above code in a narrow window:
+
+![narrow](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/e4842b904e93366d4b42b22e46440847/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-2-2_narrow.PNG)
+
+#### External resources:
+
+A W3C CSS tip: [CSS centering things](https://www.w3.org/Style/Examples/007/center), on different ways to center your content.
+A "CSS Tricks" article on [What you should know about collapsing margins](https://css-tricks.com/what-you-should-know-about-collapsing-margins/)
+
+---
+
+#### Module 4: Layout and positioning   4.2 The basics of layout   Activity 4.2 and discussion
+
+# Activity 4.2 and discussion
