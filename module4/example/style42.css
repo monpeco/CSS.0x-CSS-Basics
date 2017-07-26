@@ -1,47 +1,73 @@
 body {
   font-family: Tahoma;
+  margin: 0px;
 }
 
 header {
   background-color: #EC576B;
   color: white;
   border-bottom: 5px #FEDC3D solid;
+  margin: 0px;
 }
 
 header h1 {
   border-bottom: 2px #FFFFFF solid;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  line-height: 75px;
 }
 
 header p {
   border-bottom: 2px #FFFFFF solid;
+  height: 50px;
 }
 
 section {
   background-color: #FEDC3D;
+  width: 75%;
+  min-width: 500px;
+  margin: auto;
 }
 
 h2 {
   border-bottom: 5px #000000 solid;
+  min-width: 30%;
+  text-align: center;
+  padding: 30px;
 }
 
 article {
   background-color: #FFFFFF;
+  min-width: 40%;
+  text-align: justify;
+  margin: 50px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
 }
 
 #leftP {
-
+  margin-left: 10%;
 }
 
 #rightP {
-
+  margin-left: 50%;
 }
 
 h3 {
-
+  text-align: right;
 }
 
 footer {
   background-color: #4EC5C1;
   border-top: 5px #FEDC3D solid;
   color: white;
+  margin: 0px;
+  height: 10%;
+  max-height: 50px;
+  min-height: 10px;
+  padding: 10px;
+  margin-top: 30px;
 }
