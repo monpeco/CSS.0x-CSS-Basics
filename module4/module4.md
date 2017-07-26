@@ -149,3 +149,120 @@ Once you finish this course, look out for these and other international features
 #### Module 4: Layout and positioning   4.2 The basics of layout   Element width and height
 
 # Element width and height
+
+Element width and height
+
+Until now we've let the browser decide how big the element is, but you can actually adjust its width and height manually.
+
+### Width and height
+
+Documentation: the [width](https://www.w3.org/TR/CSS22/visudet.html#the-width-property) property 
+and the [height](https://www.w3.org/TR/CSS22/visudet.html#the-height-property) property
+
+```css
+p {
+   width: 30%;
+}
+```
+You can use pixel values for both width and height, but you'll most often want to use percentages to set these so that 
+your elements grow and shrink as appropriate based on the screen size.
+
+For example, if we set the width of a paragraph to 30% as you resize the browser window, you'll see how that element 
+dynamically resizes. That's because when you use percentages, the size is computed based on the element's 
+"[containing block](https://www.w3.org/TR/CSS22/visuren.html#containing-block)", or the element that contains the one 
+you're styling. If your element is just within the body tag, 
+the width is computed based on the relationship with the screen width.
+
+Things are a bit more complicated with using a percentage to set an element's height. This is because typically the body's 
+height is not specified, so if you use a percentage the size won't adjust.
+
+### min-width, max-width, min-height, max-height
+Documentation: [max and min width](https://www.w3.org/TR/CSS22/visudet.html#min-max-widths) and [max and min height](https://www.w3.org/TR/CSS22/visudet.html#min-max-heights)
+
+Setting width and height with percentages will save you work because your design will automatically optimize for the 
+user's screen size. However, some elements can't grow and shrink as dynamically as text can.
+
+For example, images will get "pixelated" if you let them grow too large, and they can look really distorted. Thankfully, 
+you can set max and min width and heights. This way, you can set a range for your image to grow and shrink where you 
+know it will still look good. 
+
+
+```css
+img {
+   width: 100%;
+   max-width: 1024px;
+}
+```
+
+https://codepen.io/techie4good/pen/JRoJXN
+
+```html
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <title>Dynamic Width and Height</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <p id="width50">
+      width 50%, no min or max
+    </p>
+    <p id="width80max">
+      width 80%, max of 1000px
+    </p>
+    <p id="width30min">
+      width 30%, min of 200px
+    </p>
+    <p class="heightSet">
+      the height is set to 25%, but there is no affect
+    </p>
+    <div id="containingBlock">
+      <p class="heightSet">
+        this height is also set to 25%, and since it's within a div containing block who has a set height of 500px this p will resize in relation to that. 
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+```css
+#width50 {
+  background-color:red;
+  width: 50%;
+}
+#width80max {
+  background-color: orange;
+  width: 80%;
+  max-width: 1000px;
+}
+#width30min {
+  background-color: yellow;
+  width: 30%;
+  min-width: 200px;
+}
+.heightSet {
+  background-color: green;
+  height: 25%;
+}
+#containingBlock {
+  height: 500px;
+}
+```
+When you view the above example, the paragraphs will dynamically resize based on the size of your window. For example, 
+here is what the code looks like in a wide window:
+
+![full-width](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/433e61cced8e11e11f1478eb37983e5d/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-2-1_wide.PNG)
+
+However, here is the exact same code viewed in a much narrower window:
+
+![narrow-width](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/3d9b1840bdbdfaee3fcb0e6576da916f/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-2-1_narrow.PNG)
+
+Here, you can see that the elements have resized accordingly, but have hit the limits of their min and max constraints. 
+This is why using percentages for width and height are so important, it helps you write code that works for all screen sizes. 
+
+---
+
+####  Module 4: Layout and positioning   4.2 The basics of layout   Padding and margin
+
+# Padding and margin
