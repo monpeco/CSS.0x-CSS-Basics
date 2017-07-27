@@ -366,3 +366,35 @@ A "CSS Tricks" article on [What you should know about collapsing margins](https:
 #### Module 4: Layout and positioning   4.2 The basics of layout   Activity 4.2 and discussion
 
 # Activity 4.2 and discussion
+
+For this activity, you are going to practice some of the basic alignment properties you've learned in this unit.
+
+Here is some HTML and CSS:
+
+See the Pen [Practice with Alignment](https://codepen.io/techie4good/pen/PbKMqY) by Kasey Champion ([@techie4good](https://codepen.io/techie4good/)) on CodePen.
+
+As it is, the given HTML and CSS codes produce the following Web page:
+![Webpage](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/ac176f1517ec268dcb30bb52998246a1/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-2-4_before.PNG)
+
+As you can see it's not very well aligned. Your goal is to add properties to the existing CSS rules so that the final page looks like this:
+![styled](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/eaf30118ca2b8f2fe5fda30a25c2c3d2/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-2-4_after.PNG)
+
+To do this you will need to:
+
+* remove the margin at the very edges of the page so the header and footer touch the edges of the page.
+* limit the size of the h1 title to 50% of the page's width, with horizontally centered text and vertically centered text within a height of 75px.
+* stretch the height of the header p to 50px, but let the text remain top aligned
+* limit the width of the section to 75% of the page, but never less than 500px. The section should be centered within the window.
+* limit the width of the h2 to 30% of the section, centered within that container. It should have a padding of 30px all around it.
+* limit the width of each article to 40% of the width of the section, with justified text. Each should have a margin of 50px all around it, a top padding of 10px, a left and right padding of 15px and a bottom padding of 30px. The h3 within each article should be aligned to the right.
+* give the #leftP article a left margin of 10% of the section.
+* give the #rightP article a left margin of 50% of the section.
+* limit the footer height to 10% of the page, but no more than 50px and no less than 10px. It should have a padding of 10px and a margin between it and the section of 30px.
+
+Use the discussion below to discuss your experiences.
+
+---
+
+#### Module 4: Layout and positioning   4.3 Floating elements   Meet the float property
+
+# Meet the float property
