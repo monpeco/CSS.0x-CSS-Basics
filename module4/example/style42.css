@@ -21,6 +21,10 @@ header h1 {
 header p {
   border-bottom: 2px #FFFFFF solid;
   height: 50px;
+  text-align: center;
+  background-color: blue;
+  width: 260px;
+  margin: auto;
 }
 
 section {
