@@ -1,0 +1,18 @@
+body {
+  font-size: 24pt;
+  font-family: helvetica, sans-serif;
+}
+div {
+  margin-bottom: 10px;
+}
+#default{
+  background-color: red;
+}
+#floatRightNoWidth{
+  background-color: orange;
+  float: right;
+}
+#floatRightTooWide{
+  background-color: yellow;
+  float: right;
+}
