@@ -16,3 +16,17 @@ div {
   background-color: yellow;
   float: right;
 }
+
+#noFloatWidthSet {
+  background-color: green;
+  width: 40%;
+}
+#noFloatClearRight {
+  background-color: purple;
+  clear: right;
+}
+#floatRightWidthSet {
+  background-color: blue;
+  width: 30%;
+  float: right;
+}
