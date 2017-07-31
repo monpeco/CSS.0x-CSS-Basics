@@ -507,3 +507,103 @@ div {
 #### Module 4: Layout and positioning   4.3 Floating elements   Activity 4.3 and discussion
 
 # Activity 4.3 and discussion
+
+One of the toughest parts of layouts with CSS is figuring out which elements to apply a float property to.
+
+Here is some HTML and CSS:
+
+https://codepen.io/techie4good/pen/xEbWrp
+
+
+```html
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <title>Practice with Float</title>
+      <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <h2>welcome greeting subtitle</h2>
+      <h1>Homepage Title</h1>
+    </header>
+    <section id="navigation">
+      <ul>
+        <li>nav link 1</li>
+        <li>nav link 2</li>
+        <li>nav link 3</li>
+        <li>nav link 4</li>
+      </ul>
+    </section>
+    <section id="content">
+      <div id="topRight">
+        If your elements are still not exactly where you want them to be after adjusting the padding, margins and alignment, then you can try out the float property. The "float" property is one of the most powerful tools you can master when learning CSS.
+      </div>
+      <div id="topLeft">
+        Up until now, we haven't moved elements very far from wherever the web browser automatically places them, but as you've probably noticed this has left our page very left side heavy. 
+      </div>
+      <div id="bottomRight">
+        The float property liberates an element from its automatic position and lifts it up to "float" on top of other elements in the direction you specify.  You can specify float either right, left or the default of none.  
+      </div>
+      <div id="bottomLeft">
+        Elements underneath a floating object will automatically wrap themselves around the content. For example, if you float an image, the text underneath will wrap around it so that none of it is actually obscured underneath the image.
+      </div>
+    </section>
+  </body>
+</html>
+
+```
+
+```css
+body {
+  background-color: #4ABDAC;
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+}
+header {
+  background-color: #F7B733;
+  height: 75px;
+}
+
+h1 {
+  padding: 15px;
+}
+#navigation {
+  height: 30px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navigation li:hover {
+  border-bottom: 1px #FC4A1A solid;
+}
+#content {
+  background-color: #DFDCE3;
+  width: 50%;
+  margin: 0 auto;
+}
+div {
+  background-color: #FC4A1A;
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  margin: 20px;
+}
+
+```
+
+As you can see the layout is pretty messy. Your job in this activity is to decide which elements deserve a float property. You might also need to adjust some widths, margins and paddings to get everything looking like the final image below:
+
+![messy](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/8fa8e85bccbafdea433ff8666300430e/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-3-2_activity_output.PNG)
+
+HINT: Pay close attention to the IDs applied to the HTML elements
+
+Use the discussion below to share your experiences.
+
+---
+
+#### Module 4: Layout and positioning   4.4 Relative positioning   Meet relative positioning
+
+# Meet relative positioning
