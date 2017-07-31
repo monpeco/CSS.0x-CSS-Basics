@@ -607,3 +607,128 @@ Use the discussion below to share your experiences.
 #### Module 4: Layout and positioning   4.4 Relative positioning   Meet relative positioning
 
 # Meet relative positioning
+
+The "position" property sets the algorithm for how the Web browser will compute the way the HTML elements are placed on the page. There are four different value options for the position property: 
+
+* **relative** - This is the position setting we will be discussing in detail as it is the best way to build on the dynamic layout methods we have learned thus far. This lets you specify where an HTML element should be relative to where it would be by default.
+* **static** - This is the default setting and will place an element wherever the web browser computes it should be. 
+* **fixed** - This places an element in a specific location within the window. You can use this to set an element to remain where it is regardless of scrolling. This was used heavily when "frames" were popular, however now it should be used very sparingly. 
+* **absolute** - This allows you to position elements relative to their containing box. This removes an element from it's normal flow (just like a floating element) so it can be difficult to control and make a layout that is truly dynamic. 
+
+[Documentation](https://www.w3.org/TR/CSS22/visuren.html#choose-position)
+
+```css
+div {
+   position: relative;
+}
+```
+Once you've set the position to "relative" that frees you up to set the top, right, bottom and left properties- otherwise known as the "box offsets". These properties specify the distance between this object and its normal static position and the corner of the box that we are specifying.
+
+For example, if we set the "left" to be "30px", it will move the element 30px to the right away from the left of where it was placed by default.
+
+```css
+p {
+   position: relative;
+   left: 10px;
+}
+```
+[Documentation](https://www.w3.org/TR/CSS22/visuren.html#position-props)
+
+Note that position is not an inherited property so you will have to apply it individually to each element. Because of this it is 
+best to use this approach to designing your layout sparingly and should only be used after you cannot achieve your desired layout with alignment or floating. 
+
+https://codepen.io/techie4good/pen/kkYwmB
+
+```html
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <title>Relative Positioning</title>
+      <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>a shifted header relative to body</h1>
+    <section>
+      <h2>shifted header relative to section</h2>
+    </section>
+    <footer>
+      <h3>a shifted header in a shifted footer</h3>
+    </footer>
+  </body>
+</html>
+```
+
+```css
+h1 {
+  background-color: red;
+  width: 300px;
+  position: relative;
+  left: 150px;
+}
+section {
+  background-color: orange;
+  height: 100px;
+}
+h2 {
+  position: relative;
+  top: 20px;
+}
+footer {
+  background-color: yellow;
+  height: 200px;
+  width: 300px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+h3 {
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+```
+.... gives this output:
+
+![output](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/a4ce8d619c1e91db563362743d829e21/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/css-intro-4-4-position1.png)
+
+Note that relative positioning can make elements overlap - check the following CSS code as a second example:
+
+```css
+h1 {
+   background-color: red;
+   width: 300px;
+   position: relative;
+   left: 150px;
+}
+section {
+   background-color: orange;
+   height: 100px;
+}
+h2 {
+   position: relative;
+   top: 20px;
+}
+footer {
+   background-color: yellow;
+   height: 200px;
+   width: 300px;
+   position: relative;
+   left: 50px;
+   top: -50px;
+}
+h3 {
+   position: relative;
+   top: 50px;
+   left: 10px;
+}
+```
+... that gives this different output:
+![output2](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/fecd6b132ba6083f0694307af1dc85c0/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/css-intro-4-4-position2.png)
+
+---
+
+#### Module 4: Layout and positioning   4.4 Relative positioning   Activity 4.4 and discussion
+
+# Activity 4.4 and discussion
