@@ -11,6 +11,10 @@ header {
 h1 {
    padding: 15px;
 }
+h2{
+  float: right;
+  padding-right: 30px;
+}
 #navigation {
    height: 30px;
    width: 30%;
