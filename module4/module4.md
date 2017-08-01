@@ -616,7 +616,7 @@ The "position" property sets the algorithm for how the Web browser will compute 
 * **absolute** - This allows you to position elements relative to their containing box. This removes an element from it's normal flow (just like a floating element) so it can be difficult to control and make a layout that is truly dynamic. 
 
 [Documentation](https://www.w3.org/TR/CSS22/visuren.html#choose-position)
-
+    
 ```css
 div {
    position: relative;
@@ -640,21 +640,40 @@ best to use this approach to designing your layout sparingly and should only be 
 https://codepen.io/techie4good/pen/kkYwmB
 
 ```html
-<!DOCTYPE html> 
-<!--It's a best practice to always declare DOCTYPE!-->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Relative Positioning</title>
-      <meta charset="utf-8">
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>My HTML page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
   <body>
-    <h1>a shifted header relative to body</h1>
-    <section>
-      <h2>shifted header relative to section</h2>
-    </section>
-    <footer>
-      <h3>a shifted header in a shifted footer</h3>
-    </footer>
+   <header>
+    <h2>welcome greeting subtitle</h2>
+    <h1>Homepage Title</h1>
+   </header>
+  <section id="navigation">
+   <ul>
+    <li>nav link 1</li>
+    <li>nav link 2</li>
+    <li>nav link 3</li>
+    <li>nav link 4</li>
+    </ul>
+   </section>
+   <section id="content">
+    <div id="topRight">
+    If your elements are still not exactly where you want them to be after adjusting the padding, margins and alignment, then you can try out the float property. The "float" property is one of the most powerful tools you can master when learning CSS.
+    </div>
+    <div id="topLeft">
+    Up until now, we haven't moved elements very far from wherever the web browser automatically places them, but as you've probably noticed this has left our page very left side heavy.
+    </div>
+    <div id="bottomRight">
+    The float property liberates an element from its automatic position and lifts it up to "float" on top of other elements in the direction you specify.  You can specify float either right, left or the default of none.
+    </div>
+    <div id="bottomLeft">
+    Elements underneath a floating object will automatically wrap themselves around the content. For example, if you float an image, the text underneath will wrap around it so that none of it is actually obscured underneath the image.
+    </div>
+   </section>
   </body>
 </html>
 ```
