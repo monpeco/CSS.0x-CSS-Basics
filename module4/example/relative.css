@@ -11,10 +11,17 @@ header {
 h1 {
    padding: 15px;
 }
+
 h2{
   float: right;
   padding-right: 30px;
 }
+
+li{
+    padding: 5px;
+    display:inline;
+}
+
 #navigation {
    height: 30px;
    width: 30%;
