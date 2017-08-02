@@ -751,3 +751,78 @@ h3 {
 #### Module 4: Layout and positioning   4.4 Relative positioning   Activity 4.4 and discussion
 
 # Activity 4.4 and discussion
+
+### Activity 4.4 - Practice with relative positioning
+
+For this activity, we are going to focus on using relative positioning to adjust how items sit on the page.
+
+Here is some HTML and CSS:
+https://codepen.io/techie4good/pen/KgwRwg
+
+```html
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <title>Practice with Relative Positioning</title>
+      <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>This is the main title</h1>
+    <h2>this is the subtitle</h2>
+    <section>
+      <div>
+      <h3>subsection title</h3>
+          <p>
+      The "position" property sets the algorithm for how the Web browser will compute the way the HTML elements are placed on the page. There are four different value options for the position property:
+        </p>
+    </div>
+    <div>
+      <h3>subsection title</h3>
+      <p>
+     Once you've set the position to "relative" that frees you up to set the top, right, bottom and left properties- otherwise known as the "box offsets". These properties specify the distance between this object and its normal static position and the corner of the box that we are specifying.
+
+For example, if we set the "left" to be "30px", it will move the element 30px to the right away from the left of where it was placed by default.
+      </p>
+      </div>
+    </section>
+  </body>
+</html>
+```
+
+```css
+body {
+  background-color: #EFEFEF;
+  color: #A9A9A9;
+  font-family: "Book Antiqua", serif; 
+}
+h1 {
+  color: #FF3B3F;
+}
+h2 {
+}
+div {
+  background-color: #CAEBF2;
+  width: 80%;
+}
+h3 {
+  color: #FF3B3F;
+}
+p {
+  width: 90%;
+}
+```
+Your task is to add CSS so that you achieve this final layout:
+![layout](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/96e4824c9970225df71220b783177964/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-4_activity_output.PNG)
+
+You can do this with padding and margins, but limit yourself to only add position, top and left properties. Try 
+resizing your browser window, and if you've implemented everything correctly all the elements will stay in the 
+same position relative to one another. 
+
+Use the discussion below to share your experiences.
+
+---
+
+#### Module 4: Layout and positioning   4.5 Style studies   Menus
+
+# Menus
