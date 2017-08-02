@@ -7,6 +7,8 @@ h1 {
   color: #FF3B3F;
 }
 h2 {
+  position: relative;
+  left: 30px;
 }
 div {
   background-color: #CAEBF2;
@@ -14,7 +16,15 @@ div {
 }
 h3 {
   color: #FF3B3F;
+  position: relative;
+  left: 10px;
 }
 p {
   width: 90%;
+  position: relative;
+  left: 20px;
+}
+section{
+    position: relative;
+    left: 60px;
 }
