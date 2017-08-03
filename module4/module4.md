@@ -1024,3 +1024,191 @@ This third design employs hover as a way to expose secondary links. This lets yo
 #### Module 4: Layout and positioning   4.5 Style studies   Footers
 
 # Footers
+
+The footer of your page is typically the last thing your user will see, so it's important that you provide them any essential information. Typically, you will see footers that just contain contact info, but often they can also include navigation links, search bars or other calls to action.
+
+You will want your footer to flow with your overall page design, but to be distinct from your content.
+
+https://codepen.io/techie4good/pen/RoLYKO
+
+
+```html
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <title>Practice with Alignment</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="footer1">
+      <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </section>
+      <footer>
+        <div class="contacts">
+          <a href="">email</a>
+          <a href="">twitter</a>
+          <a href="">instagram</a>
+          <a href="">facebook</a>
+        </div>
+        <p>design and code by me</p>
+      </footer>
+    </div>
+
+    <div id="footer2">
+      <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </section>
+      <footer>
+        <ul class="navCat">
+          <li class="topLevel">About</li>
+          <li>About Us</li>
+          <li>Our Story</li>
+          <li>FAQ</li>
+        </ul>
+        <ul class="navCat">
+          <li class="topLevel">Services</li>
+          <li>Custom Orders</li>
+          <li>Wholesale</li>
+        </ul>
+        <ul class="navCat">
+          <li class="topLevel">Contact</li>
+          <li>Customer Service</li>
+          <li>Careers</li>
+          <li>Community</li>
+          <li>Social Media</li>
+        </ul>
+      </footer>
+    </div>
+
+    <div id="footer3">
+      <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </section>
+      <footer>
+        Please <a href="#">contact us</a> if you have any questions
+      </footer>
+    </div>
+  </body>
+</html>
+```
+
+```css
+div {
+  font-family: Arial;
+}
+
+#footer1 {
+  background-color: #F4F4F4;
+  height: 150px;
+  margin-bottom: 50px;
+}
+#footer1 section{
+  height: 60%;
+  color: #373737;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer1 footer {
+  background-color: #C0B283;
+  color: #DCD0C0;
+  height: 40%;
+  text-align: center;
+  padding: 15px;
+}
+#footer1 footer a {
+  color: #373737;
+  padding: 5px 20px;
+}
+#footer1 footer a:hover {
+  color: #F4F4F4;
+}
+
+#footer2 {
+  background-color: #0E0B16;
+  color: #E7DFDD;
+  height: 350px;
+  margin-bottom: 50px;
+}
+#footer2 section {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+#footer2 footer {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #A239CA;
+  border-top: 1px #A239CA solid;
+}
+#footer2 ul {
+  float: left;
+  width: 30%;
+  list-style: none;
+  padding: 0px;
+}
+#footer2 li {
+  padding: 5px;
+}
+#footer2 .topLevel {
+  font-size: 1.2em;
+  font-variant: small-caps;
+}
+
+#footer3 {
+  height: 200px;  
+  background-color: #F4DECB;
+}
+#footer3 section {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #94618E;
+  color: #F8EEE7;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+#footer3 footer {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #49274A;
+  color: #94618E;
+  padding: 5px 30px;
+  text-align: center;
+}
+#footer3 a {
+  color: #94618E;
+}
+#footer3 a:hover {
+  color: #F4DECB;
+}
+```
+
+#### Footer 1
+
+This is a basic footer that uses background color to help it stand out from the rest of the content. It contains contact links and a subtle reference to the designer of the page.
+
+![footer1](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9c135af0d1fef9c55f3107993e8b7e88/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-5_footer_1.PNG)
+
+#### Footer 2
+
+This footer provides navigation links. Because the footer is at the bottom of the page, you can get away with more links being exposed because limiting area isn't as important as in the top level header.
+
+![footer2](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/9faaec50681a88db6ebed64764a8bee2/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-5_footer_2.PNG)
+
+#### Footer 3
+
+This final design flows with the overall structure of the page, but limits the content to a single simple contact link.
+
+![footer3](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/015bf0799a0d0d1174f6f8817cf511af/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-5_footer_3.PNG)
+
+---
+
+#### Module 4: Layout and positioning   4.6 Project 4 - My resume   When to use what?
+
+# When to use what?
