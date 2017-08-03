@@ -1212,3 +1212,55 @@ This final design flows with the overall structure of the page, but limits the c
 #### Module 4: Layout and positioning   4.6 Project 4 - My resume   When to use what?
 
 # When to use what?
+
+Now that we are at the end of Module 4, you have a long list of different ways to move HTML elements around your page using CSS. With so many tools come choices, as you can now accomplish the same task multiple ways. Here are some guidelines on how to decide when to use which tool, in the order in which you should use them when positioning an element.
+
+* Use **padding** and **margi**n whenever you can. This will keep things simple in relation to the box model and the overall flow of elements in relation to one another.
+* The **float** property is necessary when you want two block elements to share horizontal space. It can be easy to overuse the float property, keep in mind that if elements aren't floating the way you want them to you might want to adjust their order in the HTML instead of applying float to more and more elements.
+* If the above tools aren't getting your element where it should be, you can use **relative** positioning and directly set the box offsets (top, bottom, left, right). This makes things a bit more complicated especially when you try to inspect the box model around your element, but sometimes this is unavoidable because of collapsing margins. 
+* If all that is not enough, there are advanced CSS features such as **flexbox**, **table layout**, **absolute positioning** and **grid layout**. These will be taught in an advanced CSS course.
+
+
+---
+
+#### Module 4: Layout and positioning   4.6 Project 4 - My resume   Module 4 project and discussion
+
+# Module 4 project and discussion
+
+### Module 4 project - My resume
+
+In Modules 2 and 3, you've been building on a Web page that displays personal information about you. For this module project, we are going to continue to build on that work and turn our profile into a "resume" or "CV". It's almost a requirement these days that you have a professional online presence, so this is a good way to start building that online portfolio. 
+
+Traditional printed resumes typically are required to fit on a single piece of paper (A4 or Letter sizes), which means they need to make very effective use of the space available. For this project, you are going to try to reproduce a typical resume layout but with HTML and CSS.
+
+Here is what my Web resume looks like:
+
+![cv](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/07fb2ab374e9dcd5a05257cf25507fde/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-6_Kasey_Resume.PNG)
+
+To more closely simulate a paper resume, your entire page's content must be centered in the middle 75% of the page. All your content should remain centered, and in the same position relative to the other elements on the page when you resize the browser window. 
+
+For this project you must at least:
+
+* Use percentages to set the width of 3 elements
+* Change the text-alignment property to something other than "left" on at least 1 element
+* Have 4 floating elements
+* Use the clear property once
+* Use the position property and box offsets to position at least 2 elements
+
+Use the discussion below to share your layouts!
+
+---
+
+#### Module 4: Layout and positioning   4.7 Conclusion and exercises   After Module 4, you should be able to...
+
+# After Module 4, you should be able to...
+
+* Control exactly where an HTML element is placed on a page
+* Design the layout of your HTML elements such that they stay aligned as the window grows and shrinks
+* Employ the alignment, float and position properties when appropriate for optimal page structure
+
+In the next module, we'll...
+
+* Learn about how to design your Web page to meet your user's needs
+* Review historical web design trends and what we can learn from them
+* Explore current Web design styles and learn how to best use them
