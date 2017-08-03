@@ -826,3 +826,201 @@ Use the discussion below to share your experiences.
 #### Module 4: Layout and positioning   4.5 Style studies   Menus
 
 # Menus
+
+One of the most important aspects of any Web site is the navigation menu. Over time, top level navigation has become fairly standardized so your user will be looking for some key elements that help them find their way around your site:
+
+* A small group of descriptive links in a rectangular arrangement, often horizontally
+* A hover style to give your user some amount of responsiveness
+* A special style indicating the link for the page you are currently on
+
+https://codepen.io/techie4good/pen/ObxErz
+
+
+```html
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <title>Practice with Alignment</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="menu1">
+      <ul>
+        <li class="currentPage"><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="menu2">
+      <ul>
+        <li class="currentPage"><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <section>
+        <h1>Home Page</h1>
+        <p>A bunch of page content </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+    </div>
+
+    <div id="menu3">
+      <ul>
+        <li class="currentPage"><a href="">Home</a></li>
+        <li id="about">
+          <a href="">About</a>
+          <ul class="subitems">
+            <li>subitem 1</li>
+            <li>subitem 2</li>
+          </ul>
+        </li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
+```
+
+```css
+div {
+  clear: both;
+  margin-bottom: 50px;
+  padding: 30px;
+  font-family: Arial;
+}
+ul {
+  list-style: none;
+  height: 50px;
+}
+
+a {
+  text-decoration: none; 
+}
+#menu1 {
+  background-color: #0E0B16;
+}
+#menu1 a {
+  color: #E7DFDD;
+}
+#menu1 li {
+  padding: 10px;
+  float: left;
+}
+#menu1 a:hover {
+  border-bottom: 2px #A239CA solid;
+}
+#menu1 .currentPage {
+  background-color: #A239CA;
+}
+#menu1 .currentPage a {
+  color: #0E0B16;
+}
+
+
+#menu2 ul {
+  width: 10%;
+  height: 300px;
+  background-color: #BFD8D2;
+  margin: 0px;
+  text-align: center;
+  padding: 0px;
+  float: left;
+}
+#menu2 a {
+  color: #FFFFFF;
+}
+#menu2 li {
+  height: 15%;
+  padding-top: 25px;
+}
+#menu2 li:hover {
+  background-color: #FEDCD2;
+  border-left: 5px #DCB239 solid;
+}
+#menu2 li a {
+  font-size: 1.2em;
+}
+#menu2 .currentPage {
+  background-color: #FEDCD2;
+  border-left: 5px #DCB239 solid;
+}
+#menu2 section {
+  background-color: #FEDCD2;
+  margin-left: 10%;
+  height: 300px;
+}
+#menu2 h1 {
+  margin: 0px;
+  color: #FFFFFF;
+  text-align: center;
+}
+#menu2 p {
+  padding: 30px;
+}
+
+#menu3 {
+  background-color: #D9D9D9;
+}
+#menu3 ul {
+  background-color: #4484CE;
+}
+#menu3 li {
+  float: right;
+  padding: 15px 30px;
+}
+#menu3 li:hover {
+  background-color: #F9CF00;
+}
+#menu3 li:hover a {
+  color: #4484CE;
+}
+#menu3 a {
+  color: #F9CF00;
+  font-size: 1.3em;
+}
+#menu3 .subitems {
+  background-color: #F9CF00;
+  width: 100%;
+  padding: 0px;
+  display: none;
+}
+#menu3 .subitems li {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  float: none;
+  color: #4484CE;
+}
+#menu3 #about:hover .subitems {
+  display: block;
+}
+```
+
+#### Menu 1
+
+This is a very basic menu design. It floats the list elements to the left and gives them each a simple hover property (underline) and a new background color for the link representing the page you are currently viewing.
+
+![menu1](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/6985026ba90be845a330a399bc6b59a1/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-5_menu_1.PNG)
+
+#### Menu 2
+
+This menu design uses a vertical arrangement but still floats the overall menu object so it can sit level with your content. You can also see a tabbed format here where the page you are currently viewing directly connects to the menu item representing it. 
+
+![menu2](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/33113a2129d524c729491baf42660eab/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-5_menu_2.PNG)
+
+#### Menu 3
+
+This third design employs hover as a way to expose secondary links. This lets you leave the top level clean and simple but gives the user the power of more specific options when they interact with your header.
+
+![menu3](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/e082cebfa12f01a129b47d94dd0a929a/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/4-5_menu_3.PNG)
+
+---
+
+#### Module 4: Layout and positioning   4.5 Style studies   Footers
+
+# Footers
