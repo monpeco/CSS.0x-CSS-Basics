@@ -10,5 +10,8 @@ header h2{
     width: 60%;
 }
 
-
+header div{
+    position: relative;
+    float: right;
+}
 
