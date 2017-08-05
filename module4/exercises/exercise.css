@@ -1,0 +1,13 @@
+section {
+   width: 1000px;
+   background-color: #112233;
+}
+article {
+   width: 50%;
+   background-color: #556677;
+}
+h1 {
+   width: 10%;
+   background-color: #AA00FF;
+}
+li { float: right; }
