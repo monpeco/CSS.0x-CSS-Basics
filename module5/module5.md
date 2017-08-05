@@ -125,3 +125,16 @@ A well-coded page will be understandable without it.
 ### Module 5: Designing your Web site for your audience   5.1 Introduction   The W3C CSS WG
 
 # The W3C CSS WG
+
+The W3C CSS Working Group
+
+The CSS Working Group (Cascading Style Sheets Working Group) is a working group created by the W3C in 1997 to tackle issues that had not been addressed with CSS level 1. The number of members reaches 125 in April 2017!
+
+The CSS WG meeting in Lisbon, November 2016. The working group is co-chaired by Rossen Atanassov and Alan Stearns. (Photo credit: Marie-Claire Forgue)
+The CSS WG members are working on a whole range of specifications, but their core document is CSS snapshot 2017. This document collects together into one definition all the specs that together form the current state of Cascading Style Sheets (CSS) as of 2017. The primary audience is CSS implementers, not CSS authors, as this definition includes modules by specification stability, not Web browser adoption rate.
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.2 The basics of design   Applying basic design principals
+
+# Applying basic design principals
