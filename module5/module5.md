@@ -241,3 +241,138 @@ Good balance between content and white space prevents your user from becoming fa
 
 # Activity 5.2 and discussion
 
+###Activity 5.2 - Breaking design guidelines
+
+For this activity, you'll need to find a Web site that violates one of the following design guidelines:
+
+* Uses more than 2 different font-faces within a single page
+* Uses more than 4 different colors within the same page
+* Displays text wider than 50-75 characters across
+
+Once you have found a site, please share it in the discussion and answer the following questions:
+
+* Which of the 3 design guidelines are violated? More than 1 guideline?
+* Do you think that violation is a problem in this design?
+* How you you improve the design overall? 
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.3 Designing for your audience   Intro to Web accessibility
+
+# Intro to Web accessibility
+
+### What is Web accessibility?
+
+> The power of the Web is in its universality.
+> Access by everyone regardless of disability is an essential aspect.
+**Tim Berners-Lee, W3C Director and inventor of the World Wide Web**
+
+The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).
+
+### Who is impacted?
+
+Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:
+* Captions on audio and multimedia content for people who are hard of hearing;
+* Clear and consistent layout for people with learning and cognitive disabilities;
+* Keyboard support for people with physical disabilities and do not use a mouse;
+* Text alternatives for people with visual disabilities and using screen readers;
+
+### Web accessibility benefits people with and without disabilities
+
+Web accessibility features also benefit many more users, such as:
+
+* People with temporary situational limitations, such as a broken arm;
+* People using mobile devices, televisions, and other access channels;
+* People using older computers, with low bandwidth, and other limitations;
+* People who are new to computers, to the Web, or to your own website;
+* People who are not fluent in the language of your particular website;
+
+The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the W3C Accessibility overview.
+
+Curso   Module 5: Designing your Web site for your audience   5.3 Designing for your audience   Intro to Web accessibility
+ Anterior
+
+other Intro to Web accessibility 
+
+other Inclusive design 
+
+other What is internationalization? 
+
+other Activity 5.3 and discussion Siguiente 
+Intro to Web accessibility
+ Bookmark this page
+What is Web accessibility?
+
+The power of the Web is in its universality.
+Access by everyone regardless of disability is an essential aspect.
+Tim Berners-Lee, W3C Director and inventor of the World Wide Web
+
+WAI Web page displayed on a laptop's screen
+
+The Web has become an essential aspect of our daily lives, and everyone should have access to this technology. Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits. Access to information, including on the Web, is also recognized by the UN Convention on the Rights of Persons with Disabilities (CRPD).
+
+Who is impacted?
+
+Web accessibility addresses all disabilities, including hearing, learning and cognitive, neurological, physical, speech, and visual disabilities. Some examples of Web accessibility features include:
+
+Captions on audio and multimedia content for people who are hard of hearing;
+Clear and consistent layout for people with learning and cognitive disabilities;
+Keyboard support for people with physical disabilities and do not use a mouse;
+Text alternatives for people with visual disabilities and using screen readers;
+Web accessibility benefits people with and without disabilities
+
+Web accessibility features also benefit many more users, such as:
+
+People with temporary situational limitations, such as a broken arm;
+People using mobile devices, televisions, and other access channels;
+People using older computers, with low bandwidth, and other limitations;
+People who are new to computers, to the Web, or to your own website;
+People who are not fluent in the language of your particular website;
+
+The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. When Web pages, Web technologies, Web tools, or Web applications are badly designed, they can create barriers that exclude people from using the Web. More information is available in the W3C Accessibility overview.
+
+### First steps in Web accessibility
+
+There are many simple Web accessibility improvements that you can implement and check right away, even when you are 
+new to this topic. Two example excerpts are provided below on this page but you can find more tips and information 
+from W3C/WAI:
+
+* [Tips for Getting Started with Web Accessibility](https://www.w3.org/WAI/gettingstarted/tips/)
+* [Easy Checks - A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary)
+
+### Example 1: page title
+
+Good page titles are particularly important for orientation — to help people know where they are and move between 
+pages open in their browser. The first thing screen readers say when the user goes to a different Web page is the 
+page title. In the Web page markup, they are the `<title>` within the `<head>`.
+
+#### Check #1: There is a title that adequately and briefly describes the content of a page, and that it distinguishes the page from other Web pages.
+
+Example:
+```html
+<head>
+...
+   <title>Web Accessibility Initiative (WAI) - home page</title>
+...
+</head>
+```
+
+### Example 2: image text alternatives ("ALT TEXT")
+
+Text alternatives ("alt text") are a primary way of making visual information accessible, because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech.
+
+#### Check #2: Every image has alt with appropriate alternative text.
+
+Example: See the W3C logo below. It contains a link that points to the W3C Web site. The text alternative is going to be a brief description of the link target.
+
+```html
+<a href="http://w3.org">
+   <img src="images/w3c_home.png" width="72" height="48" alt="W3C Web site">
+</a>
+```
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.3 Designing for your audience   Inclusive design
+
+# Inclusive design
