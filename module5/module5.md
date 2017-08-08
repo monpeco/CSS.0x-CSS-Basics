@@ -415,3 +415,84 @@ Color contrast: https://www.w3.org/WAI/eval/preliminary.html#contrast
 #### Module 5: Designing your Web site for your audience   5.3 Designing for your audience   What is internationalization?
 
 # What is internationalization?
+
+Access to the Web for all has been a fundamental concern and goal of the W3C since the beginning. It is easy to overlook the needs of people from cultures different to your own, or who use different languages or writing systems, but you have to ensure that any content or application that you design or develop is ready to support the international features that they will need.
+
+'Internationalization' is sometimes abbreviated to 'i18n' in English, because there are 18 characters between the 'i' and the 'n'.W3C Internationalization Activity logo
+
+The W3C Internationalization Activity works with W3C working groups and liaises with other organizations to make it possible to use Web technologies with different languages, scripts, and cultures.
+
+People who use non-Latin writing systems or use the Latin script for certain languages, often have specific typographic needs that differ from text in, say, English. As you learn more about CSS, you will find that it provides many features to support those needs.
+
+Whereas HTML markup provides structure for the content of your page, CSS bring the expressive power to make the page look the way a person from particular culture would expect.
+
+#### Examples
+
+Here are some examples of things that can be done with CSS.
+
+It is already possible to make text run vertically in CSS for languages such as Chinese, Japanese, Korean and Mongolian. For more information see Styling vertical Chinese, Japanese, Korean and Mongolian text.
+
+![vertical](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/ad92ee0958556281802909063f7ce69d/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/mongolian.png)
+
+You can also style counters for lists or chapter headings and such like according to local preferences. Here we see lists using Georgian and Japanese labels.
+
+![count](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/1418f5744104758c3429bdcbe7b02512/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/counterstyles2.png)
+
+When you want to justify text so that the lines are straight on both sides of your column, different strategies are used for different scripts. Most Western typography puts an emphasis on adjusting inter-word spaces, but Chinese doesn't use spaces between words, so you generally do inter-character spacing. In text written using the arabic script it is common to stretch the baseline that joins letters, or use other techniques to balance the line.
+
+![justify](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/5dc2f0add20107a9d1fa253ea7ee9620/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/justified_arabic.png)
+
+Some scripts allow words to be hyphenated in order to improve the visual effect of a paragraph, but note that the way in which words are hyphenated depends on the language. (And in arabic script, the CSS specification requires that both parts of the word retain their joining line during hyphenation.)
+
+Text decoration and text style features can vary in applicability from script to script. For example, Japanese characters are fairly complicated so, rather than italicise their text for emphasis, which can make it harder to read at small sizes, they have a tradition of placing special marks alongside the emphasised text (see the middle line of the Japanese example below). Also, it may be important to avoid underlines running over descenders in some scripts, since it can obscure important marks attached to a base character, so CSS allows you to skip 'ink' as shown in the Burmese example below.
+
+![decoration](https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/a324ff56040d00ba332cab52d2373374/asset-v1:W3Cx+CSS.0x+1T2017+type@asset+block/decoration-skip-ink.png)
+
+### CSS & Language
+
+An important point to bear in mind is that for many of these features to work as expected, you need to declare the language of the content. For example:
+
+* Hyphenation won't work unless the content is labelled for language. This is because the way that hyphenation works, and the dictionaries it uses, are language-specific.
+* If you want to convert Turkish or Azeri text to uppercase or vice versa, you will get incorrect results unless the browser knows that the text is in that language, because they have a dotted i and a non-dotted ı which do case conversion differently from European languages.
+* If text wraps to a new line, by default it does so differently dependent on whether you are dealing with Chinese or Japanese.
+* And we could continue...
+
+Therefore, you should always ensure that the correct language is specified in the lang attribute on the html tag, to indicate the default language of the page. And if you have passages in another language inside the page, you should put a lang attribute on markup that surrounds them, too.
+
+### Localization
+
+In addition, CSS provides tremendous help if you have to translate content from one language to another. Being able to change a single line in a style sheet to appy a change to all the pages being translated, rather than having to edit every page, saves a massive amount of time. However, this works best when you keep the distinction between semantics (markup) and presentation (styling) clear.
+
+Don't use CSS to apply direction for bidirectional or right-to-left scripts, such as content in Arabic, Hebrew, Persian, Urdu, Divehi, etc. Use [HTML markup instead](https://www.w3.org/International/questions/qa-bidi-css-markup).
+
+### Internationalization quick tips
+
+1. Language: Always declare the default language of your page using the lang attribute on the html tag, and indicate internal language changes.
+2. Localizable styling: Use CSS styling for the presentational aspects of your page. So that it's easy to adapt content to suit the typographic needs of the audience, keep a clear separation between styling and semantic content, and don't use 'presentational' markup.
+3. Use international features: Use the international features provided by CSS to make your pages look natural to your audience. The more you use such features, and the more you request them, the better browsers will support them.
+4. Check your colors and styles: Be sensitive to local preferences of your audience for things such as color, but also use of white space, two-dimensional vs. uni-directional display of information, etc.
+5. Use start and end: Using these values, where possible, rather than left and right makes it easier to convert content between languages that use right-to-left and lef-to-right scripts.
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.3 Designing for your audience   Activity 5.3 and discussion
+
+# Activity 5.3 and discussion
+
+For this section, your task is to go out and find a Web page that has one of the following issues:
+
+1. A page that does not have a title set in its header
+2. A page that has images without alt-text
+3. A page with a color scheme makes it difficult for color-blind users to use
+4. A page with a layout that breaks on text-only zoom
+
+Once you've found an example of any of the above, post it on the discussion below, and answer the following questions:
+
+1. Which of the above 4 accessibility guidelines does this page break? More than one?
+2. Because of this violation what part of the Web page becomes inaccessible and to which group of users?
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.4 Historical Web design trends   The history of Web design
+
+# The history of Web design
