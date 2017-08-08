@@ -496,3 +496,79 @@ Once you've found an example of any of the above, post it on the discussion belo
 #### Module 5: Designing your Web site for your audience   5.4 Historical Web design trends   The history of Web design
 
 # The history of Web design
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.4 Historical Web design trends   Moving pieces
+
+# Moving pieces
+
+As Web design tools became more sophisticated, the Web seemed to fill up with lots of fancy features that ultimately were just distracting. Especially in an era before mobile phones, certain items were used to add emphasis and style, but now are considered dated and would be a huge issue for mobile Web browsers.
+
+Here is a list of style elements that should be avoided:
+
+* marquee and rotating text - instead, use the different aspects of font to emphasize text like: size, color, weight or typography.
+* cursors with animation - a very exciting feature at the time, now would be considered very dated, especially since mobile Web browsers don't even show a cursor. If you are going to adjust the cursor's appearance, do so using the [CSS cursor property](https://www.w3.org/wiki/CSS/Properties/cursor) and limit your usage to help your users understand when an item is interactive.
+* lots of GIFs - GIFs are still very in style, especially with the popularity of services like [giphy.com](giphy.com). Be aware however that GIFs draw a LOT of attention, so try to only use them when necessary. 
+* videos that play automatically - these days, you'll find this tactic used almost exclusively by advertisements, so it is a good idea to avoid it if you don't want your user to dismiss your content. 
+* background music - sometimes still used to set a tone for your site, but often is considered disruptive by users. If you absolutely must have background music, make sure to give your user a way to turn it off that is easily accessible.
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.4 Historical Web design trends   Rigid layouts
+
+# Rigid layouts
+
+Now, when we design sites, we are always talking about "different screen sizes", "different devices", etc. This is because there is such a huge array of ways that users will access a Web site. Historically, this was not the case, and it was a safe assumption that your user would access your site using a device and screen that were very similar to the ones you used to make it. As our devices evolved, so did our CSS layout tools so we could move away from these old trends.
+
+### frames
+
+Used as a crutch for Web site navigation, this was a site within a site that followed your user around as they navigated. It was often used in placement of a menu bar. This feature was removed in HTML5.
+
+Instead, focus on making a user's flow through your site intuitive by building a visually distinct and consistent form of navigation. 
+
+### HTML Tables for Layout
+
+Tables organize data into structured rectangular sections, so it was an easy way to organize your site in a grid-like layout. HTML tables came with lots of problems. They overloaded HTML trees with lots of unnecessary tags that all come with their own set style that had to be adjusted, and they were extremely limited in how much you could actually adjust them. They also can pose problems with accessibility, it was easy for your content to be displayed in the wrong order.
+
+Initially, we replaced HTML tables with `<div>` tags, a multi-purpose tag that was much more flexible than a table row or column, but while divs were flexible they weren't very descriptive. With HTML5, we gained more content descriptive tags like <header>, <footer>, <section> and <article> that have the same flexibility of div but that better describe your content.
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.4 Historical Web design trends   Heavy content
+
+# Heavy content
+
+These days, it is extremely likely that many of your users will view your page on a mobile device, typically using cell data as their connection. Cell networks are much more limited than the hard wired connections that were once the only gateway to the Internet.
+
+Back when this was the case, Web designers employed a number of techniques that were very "heavy" (often Adobe Flash) or required a lot of data to download. Now, we have to always be aware of how heavy our page load is, so we don't exclude users on cellular data networks from accessing our site.
+
+Adobe Flash
+
+This is a way for designers to add interactivity and sophisticated animations to sites. However, Flash is not supported on mobile phones and so the use of flash to animate pages has fallen out of style. Also, with CSS3, we now have a host of animations that come standard with CSS so there is less need for an external, heavy technology to make dynamic pages.
+
+Animations are beyond the scope of this class, however be aware that there are two ways to do animations: using [CSS animations](https://www.w3.org/TR/css3-animations/) or [CSS transitions](https://www.w3.org/TR/css3-transitions/).
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.4 Historical Web design trends   Activity 5.4 and discussion
+
+# Activity 5.4 and discussion
+
+For this activity, please find a retro styled Web site that uses one of the following outdated design elements. You might want to use the [Internet Archive](https://archive.org/web/) to find some older Web pages where these elements were more prevalent.
+
+1. overly animated text
+2. animated cursors
+3. Frames
+4. HTML table layouts
+
+Once you've found an example page, post it in the discussion and answer the following questions:
+
+1. Which historic design element does this page use? More than one?
+2. What new technology would you use to modernize this element?
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.5 Current Web design trends   The current state of Web design
+
+# The current state of Web design
