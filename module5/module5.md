@@ -572,3 +572,167 @@ Once you've found an example page, post it in the discussion and answer the foll
 #### Module 5: Designing your Web site for your audience   5.5 Current Web design trends   The current state of Web design
 
 # The current state of Web design
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.5 Current Web design trends   Minimalism
+
+# Minimalism
+
+This Web design trend is part fashion, part function. Since we always keep mobile devices in mind when designing, the "rich design" styles of the past (drop shadows, gradients, lots of images, colors, and fonts) have been replaced with the current trend "flat design".
+
+### Flat design emphasizes:
+
+* simple elements - grid layouts, limited number of elements
+* clean typography - sans-serif fonts, large sized and lower case 
+* flat colors - no drop shadows, no attempt to make 2D elements look 3D
+
+### Benefits of flat design:
+
+* low load times - better for mobile network connections
+* responsiveness - when there are a small number of elements, it is easier to manage their relationships so that the overall layout can grow and shrink to accommodate different screen sizes
+* intuitive experience - research has shown that the cleaner a site, the easier it is for a user to find the information they are looking for
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.5 Current Web design trends   Long scrolling
+
+# Long scrolling
+
+In the past, Web sites were comprised of many separate pages that you would navigate to, leaving behind the page you came from. These days, you'll often find pages that are comprised of a single long scrolling page with links that just jump to different portions of the page. The reason for this is less about fashion and more about technological developments. Especially on touch devices, scrolling is a more natural human way to interact with a page.
+
+This can be accomplished with something called "internal links". This is where you load the entire page as one long site and the links at the top simple jump to different locations within the site. To do this, you need to give the section you want to jump to an id, and then you use the id selector as the href setting on the anchor tag. 
+
+https://codepen.io/techie4good/pen/yVKNBO
+```html
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <title>Practice with Pseudoclass</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#section1">section 1</a></li>
+        <li><a href="#section2">section 2</a></li>
+        <li><a href="#section3">section 3</a></li>
+        <li><a href="#section4">section 4</a></li>
+      </ul>
+    </nav>
+    <section id="section1">
+      <h1>Section 1</h1>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, sem ut vulputate tempus, leo urna fringilla dolor, sed mattis leo sem id ligula. Integer efficitur, nulla eu scelerisque aliquam, arcu erat maximus ante, nec maximus urna ligula vel purus. Cras a tortor ac nisl sollicitudin ullamcorper. Nullam pulvinar magna mi, eu volutpat metus pretium quis. In faucibus, leo in blandit ultricies, urna metus eleifend leo, et vestibulum dolor mi ut urna. Nulla eu neque nec justo cursus condimentum. Donec pellentesque tempus iaculis. Nunc augue justo, tincidunt in euismod vitae, feugiat sed eros. Integer molestie sapien id aliquam fermentum. Duis rutrum sed orci ac aliquet. Nulla volutpat posuere nibh ut ullamcorper. Suspendisse facilisis felis massa, vel egestas ex faucibus a. Nunc vestibulum volutpat eros eu laoreet.
+      </p>
+      <p>
+Fusce sed pellentesque tellus, vitae accumsan elit. Vivamus porta in risus interdum varius. Phasellus auctor bibendum dignissim. Pellentesque ut nulla arcu. Aenean id tellus augue. Nunc egestas scelerisque fringilla. Suspendisse potenti. Cras tempus diam lectus, a tempus eros maximus nec. Etiam facilisis erat turpis, in tincidunt leo condimentum sit amet. Fusce eleifend nisi sed enim pharetra molestie. Curabitur dictum, libero eget congue porta, est massa bibendum enim, sed semper arcu orci et arcu. Praesent in cursus turpis. Fusce condimentum dictum purus nec porta. Aenean a velit in augue convallis malesuada non a mauris. Donec auctor risus quis libero accumsan suscipit. Fusce nec diam dolor.
+      </p>
+      <p>
+Proin aliquet, diam ultricies dignissim lacinia, libero lectus semper est, in lacinia eros augue ut risus. Maecenas sit amet metus finibus augue congue sagittis nec mattis leo. Quisque venenatis a erat nec gravida. Nulla sit amet pharetra risus. Nam sit amet nulla tellus. Pellentesque libero ex, ultrices eu tristique ut, mattis eget augue. Cras ac dolor convallis, convallis tortor nec, rutrum eros. Nunc nisl est, efficitur sit amet lorem at, egestas vulputate augue. Nunc sed ornare orci. Suspendisse potenti. Fusce risus dolor, pellentesque ac commodo a, pretium vel enim. Phasellus finibus aliquam purus sit amet ultricies. Vestibulum vitae libero scelerisque, maximus ex nec, pharetra orci. Nulla cursus volutpat nisl in dictum.
+      </p>
+      <p>
+Phasellus quis lobortis orci. Nunc tincidunt lacus in sapien tristique, dignissim pretium eros varius. Praesent dapibus tincidunt lectus, id tristique arcu iaculis id. Mauris euismod placerat pellentesque. Proin ultricies porttitor porttitor. Suspendisse vehicula arcu a finibus dapibus. Nam non urna nulla. Vivamus aliquet, ipsum et convallis blandit, mauris lacus malesuada dolor, vitae vestibulum velit lectus vel lacus. Phasellus eget ipsum ultrices ipsum sodales interdum. Pellentesque in viverra nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In aliquam convallis lorem vel pellentesque. Curabitur id ante ac risus condimentum accumsan. Aliquam venenatis facilisis fermentum.
+      </p>
+      <p>
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in sapien ac dolor venenatis fermentum et porttitor lacus. Curabitur eu venenatis urna. Nam auctor orci id dui condimentum convallis. Nunc ut nisl rhoncus, elementum tortor sit amet, rutrum tellus. Morbi placerat neque id urna maximus interdum. Sed volutpat, nisl ut tempor bibendum, ipsum mi egestas sem, a tempus sem orci et mi. Nullam sit amet consectetur mi.
+      </p>
+    </section>
+    <section id="section2">
+      <h1>Section 2</h1>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, sem ut vulputate tempus, leo urna fringilla dolor, sed mattis leo sem id ligula. Integer efficitur, nulla eu scelerisque aliquam, arcu erat maximus ante, nec maximus urna ligula vel purus. Cras a tortor ac nisl sollicitudin ullamcorper. Nullam pulvinar magna mi, eu volutpat metus pretium quis. In faucibus, leo in blandit ultricies, urna metus eleifend leo, et vestibulum dolor mi ut urna. Nulla eu neque nec justo cursus condimentum. Donec pellentesque tempus iaculis. Nunc augue justo, tincidunt in euismod vitae, feugiat sed eros. Integer molestie sapien id aliquam fermentum. Duis rutrum sed orci ac aliquet. Nulla volutpat posuere nibh ut ullamcorper. Suspendisse facilisis felis massa, vel egestas ex faucibus a. Nunc vestibulum volutpat eros eu laoreet.
+      </p>
+      <p>
+Fusce sed pellentesque tellus, vitae accumsan elit. Vivamus porta in risus interdum varius. Phasellus auctor bibendum dignissim. Pellentesque ut nulla arcu. Aenean id tellus augue. Nunc egestas scelerisque fringilla. Suspendisse potenti. Cras tempus diam lectus, a tempus eros maximus nec. Etiam facilisis erat turpis, in tincidunt leo condimentum sit amet. Fusce eleifend nisi sed enim pharetra molestie. Curabitur dictum, libero eget congue porta, est massa bibendum enim, sed semper arcu orci et arcu. Praesent in cursus turpis. Fusce condimentum dictum purus nec porta. Aenean a velit in augue convallis malesuada non a mauris. Donec auctor risus quis libero accumsan suscipit. Fusce nec diam dolor.
+      </p>
+      <p>
+Proin aliquet, diam ultricies dignissim lacinia, libero lectus semper est, in lacinia eros augue ut risus. Maecenas sit amet metus finibus augue congue sagittis nec mattis leo. Quisque venenatis a erat nec gravida. Nulla sit amet pharetra risus. Nam sit amet nulla tellus. Pellentesque libero ex, ultrices eu tristique ut, mattis eget augue. Cras ac dolor convallis, convallis tortor nec, rutrum eros. Nunc nisl est, efficitur sit amet lorem at, egestas vulputate augue. Nunc sed ornare orci. Suspendisse potenti. Fusce risus dolor, pellentesque ac commodo a, pretium vel enim. Phasellus finibus aliquam purus sit amet ultricies. Vestibulum vitae libero scelerisque, maximus ex nec, pharetra orci. Nulla cursus volutpat nisl in dictum.
+      </p>
+      <p>
+Phasellus quis lobortis orci. Nunc tincidunt lacus in sapien tristique, dignissim pretium eros varius. Praesent dapibus tincidunt lectus, id tristique arcu iaculis id. Mauris euismod placerat pellentesque. Proin ultricies porttitor porttitor. Suspendisse vehicula arcu a finibus dapibus. Nam non urna nulla. Vivamus aliquet, ipsum et convallis blandit, mauris lacus malesuada dolor, vitae vestibulum velit lectus vel lacus. Phasellus eget ipsum ultrices ipsum sodales interdum. Pellentesque in viverra nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In aliquam convallis lorem vel pellentesque. Curabitur id ante ac risus condimentum accumsan. Aliquam venenatis facilisis fermentum.
+      </p>
+      <p>
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in sapien ac dolor venenatis fermentum et porttitor lacus. Curabitur eu venenatis urna. Nam auctor orci id dui condimentum convallis. Nunc ut nisl rhoncus, elementum tortor sit amet, rutrum tellus. Morbi placerat neque id urna maximus interdum. Sed volutpat, nisl ut tempor bibendum, ipsum mi egestas sem, a tempus sem orci et mi. Nullam sit amet consectetur mi.
+      </p>
+    </section>
+    <section id="section3">
+      <h1>Section 3</h1>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, sem ut vulputate tempus, leo urna fringilla dolor, sed mattis leo sem id ligula. Integer efficitur, nulla eu scelerisque aliquam, arcu erat maximus ante, nec maximus urna ligula vel purus. Cras a tortor ac nisl sollicitudin ullamcorper. Nullam pulvinar magna mi, eu volutpat metus pretium quis. In faucibus, leo in blandit ultricies, urna metus eleifend leo, et vestibulum dolor mi ut urna. Nulla eu neque nec justo cursus condimentum. Donec pellentesque tempus iaculis. Nunc augue justo, tincidunt in euismod vitae, feugiat sed eros. Integer molestie sapien id aliquam fermentum. Duis rutrum sed orci ac aliquet. Nulla volutpat posuere nibh ut ullamcorper. Suspendisse facilisis felis massa, vel egestas ex faucibus a. Nunc vestibulum volutpat eros eu laoreet.
+      </p>
+      <p>
+Fusce sed pellentesque tellus, vitae accumsan elit. Vivamus porta in risus interdum varius. Phasellus auctor bibendum dignissim. Pellentesque ut nulla arcu. Aenean id tellus augue. Nunc egestas scelerisque fringilla. Suspendisse potenti. Cras tempus diam lectus, a tempus eros maximus nec. Etiam facilisis erat turpis, in tincidunt leo condimentum sit amet. Fusce eleifend nisi sed enim pharetra molestie. Curabitur dictum, libero eget congue porta, est massa bibendum enim, sed semper arcu orci et arcu. Praesent in cursus turpis. Fusce condimentum dictum purus nec porta. Aenean a velit in augue convallis malesuada non a mauris. Donec auctor risus quis libero accumsan suscipit. Fusce nec diam dolor.
+      </p>
+      <p>
+Proin aliquet, diam ultricies dignissim lacinia, libero lectus semper est, in lacinia eros augue ut risus. Maecenas sit amet metus finibus augue congue sagittis nec mattis leo. Quisque venenatis a erat nec gravida. Nulla sit amet pharetra risus. Nam sit amet nulla tellus. Pellentesque libero ex, ultrices eu tristique ut, mattis eget augue. Cras ac dolor convallis, convallis tortor nec, rutrum eros. Nunc nisl est, efficitur sit amet lorem at, egestas vulputate augue. Nunc sed ornare orci. Suspendisse potenti. Fusce risus dolor, pellentesque ac commodo a, pretium vel enim. Phasellus finibus aliquam purus sit amet ultricies. Vestibulum vitae libero scelerisque, maximus ex nec, pharetra orci. Nulla cursus volutpat nisl in dictum.
+      </p>
+      <p>
+Phasellus quis lobortis orci. Nunc tincidunt lacus in sapien tristique, dignissim pretium eros varius. Praesent dapibus tincidunt lectus, id tristique arcu iaculis id. Mauris euismod placerat pellentesque. Proin ultricies porttitor porttitor. Suspendisse vehicula arcu a finibus dapibus. Nam non urna nulla. Vivamus aliquet, ipsum et convallis blandit, mauris lacus malesuada dolor, vitae vestibulum velit lectus vel lacus. Phasellus eget ipsum ultrices ipsum sodales interdum. Pellentesque in viverra nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In aliquam convallis lorem vel pellentesque. Curabitur id ante ac risus condimentum accumsan. Aliquam venenatis facilisis fermentum.
+      </p>
+      <p>
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in sapien ac dolor venenatis fermentum et porttitor lacus. Curabitur eu venenatis urna. Nam auctor orci id dui condimentum convallis. Nunc ut nisl rhoncus, elementum tortor sit amet, rutrum tellus. Morbi placerat neque id urna maximus interdum. Sed volutpat, nisl ut tempor bibendum, ipsum mi egestas sem, a tempus sem orci et mi. Nullam sit amet consectetur mi.
+      </p>
+    </section>
+    <section id="section4">
+      <h1>Section 4</h1>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, sem ut vulputate tempus, leo urna fringilla dolor, sed mattis leo sem id ligula. Integer efficitur, nulla eu scelerisque aliquam, arcu erat maximus ante, nec maximus urna ligula vel purus. Cras a tortor ac nisl sollicitudin ullamcorper. Nullam pulvinar magna mi, eu volutpat metus pretium quis. In faucibus, leo in blandit ultricies, urna metus eleifend leo, et vestibulum dolor mi ut urna. Nulla eu neque nec justo cursus condimentum. Donec pellentesque tempus iaculis. Nunc augue justo, tincidunt in euismod vitae, feugiat sed eros. Integer molestie sapien id aliquam fermentum. Duis rutrum sed orci ac aliquet. Nulla volutpat posuere nibh ut ullamcorper. Suspendisse facilisis felis massa, vel egestas ex faucibus a. Nunc vestibulum volutpat eros eu laoreet.
+      </p>
+      <p>
+Fusce sed pellentesque tellus, vitae accumsan elit. Vivamus porta in risus interdum varius. Phasellus auctor bibendum dignissim. Pellentesque ut nulla arcu. Aenean id tellus augue. Nunc egestas scelerisque fringilla. Suspendisse potenti. Cras tempus diam lectus, a tempus eros maximus nec. Etiam facilisis erat turpis, in tincidunt leo condimentum sit amet. Fusce eleifend nisi sed enim pharetra molestie. Curabitur dictum, libero eget congue porta, est massa bibendum enim, sed semper arcu orci et arcu. Praesent in cursus turpis. Fusce condimentum dictum purus nec porta. Aenean a velit in augue convallis malesuada non a mauris. Donec auctor risus quis libero accumsan suscipit. Fusce nec diam dolor.
+      </p>
+      <p>
+Proin aliquet, diam ultricies dignissim lacinia, libero lectus semper est, in lacinia eros augue ut risus. Maecenas sit amet metus finibus augue congue sagittis nec mattis leo. Quisque venenatis a erat nec gravida. Nulla sit amet pharetra risus. Nam sit amet nulla tellus. Pellentesque libero ex, ultrices eu tristique ut, mattis eget augue. Cras ac dolor convallis, convallis tortor nec, rutrum eros. Nunc nisl est, efficitur sit amet lorem at, egestas vulputate augue. Nunc sed ornare orci. Suspendisse potenti. Fusce risus dolor, pellentesque ac commodo a, pretium vel enim. Phasellus finibus aliquam purus sit amet ultricies. Vestibulum vitae libero scelerisque, maximus ex nec, pharetra orci. Nulla cursus volutpat nisl in dictum.
+      </p>
+      <p>
+Phasellus quis lobortis orci. Nunc tincidunt lacus in sapien tristique, dignissim pretium eros varius. Praesent dapibus tincidunt lectus, id tristique arcu iaculis id. Mauris euismod placerat pellentesque. Proin ultricies porttitor porttitor. Suspendisse vehicula arcu a finibus dapibus. Nam non urna nulla. Vivamus aliquet, ipsum et convallis blandit, mauris lacus malesuada dolor, vitae vestibulum velit lectus vel lacus. Phasellus eget ipsum ultrices ipsum sodales interdum. Pellentesque in viverra nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In aliquam convallis lorem vel pellentesque. Curabitur id ante ac risus condimentum accumsan. Aliquam venenatis facilisis fermentum.
+      </p>
+      <p>
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in sapien ac dolor venenatis fermentum et porttitor lacus. Curabitur eu venenatis urna. Nam auctor orci id dui condimentum convallis. Nunc ut nisl rhoncus, elementum tortor sit amet, rutrum tellus. Morbi placerat neque id urna maximus interdum. Sed volutpat, nisl ut tempor bibendum, ipsum mi egestas sem, a tempus sem orci et mi. Nullam sit amet consectetur mi.
+      </p>
+    </section>
+  </body>
+</html>
+```
+
+```css
+body {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  list-style: none;
+  padding: 50px;
+}
+ul li {
+  float: left;
+  width: 10%;
+}
+section {
+  clear: both;
+}
+```
+There are other methods that are more advanced that save you from loading the 
+entire page. One technique under development to make scrolling easier and more accurate is a 
+module called "[CSS Scroll Snap](https://www.w3.org/TR/css-scroll-snap-1/)".
+
+---
+
+#### Module 5: Designing your Web site for your audience   5.5 Current Web design trends   Activity 5.5 and discussion
+
+# Activity 5.5 and discussion
+
+For this activity, go out and find what you think is the best-designed Web page! Post a link to it in the discussion along with the answers to the following questions:
+
+* Why do you like the design of this Web page?
+* What is one aspect of this Web page you would like to use in your own design?
+* Is this Web page accessible?
+* 
+---
+
+#### Module 5: Designing your Web site for your audience   5.6 Project 5 - Apply good design   Apply good design
+
+# Apply good design
