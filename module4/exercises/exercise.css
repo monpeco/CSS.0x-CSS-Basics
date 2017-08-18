@@ -10,4 +10,7 @@ h1 {
    width: 10%;
    background-color: #AA00FF;
 }
-li { float: right; }
+li { 
+   float: right; 
+   width: 50%;
+}
